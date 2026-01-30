@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-evaluación - Unidad 1: Las Organizaciones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .header h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .question {
+            background: #f8f9fa;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .question h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .options {
+            margin-left: 10px;
+        }
+        
+        .option {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .option input[type="radio"] {
+            margin-right: 10px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .option label {
+            cursor: pointer;
+            font-size: 1em;
+            color: #555;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+            transition: transform 0.2s;
+        }
+        
+        .submit-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .result {
+            display: none;
+            text-align: center;
+            padding: 30px;
+            background: #f0f8ff;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .result h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        
+        .score {
+            font-size: 3em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        .feedback {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 15px;
+        }
+        
+        .correct {
+            background-color: #d4edda !important;
+            border-left-color: #28a745 !important;
+        }
+        
+        .incorrect {
+            background-color: #f8d7da !important;
+            border-left-color: #dc3545 !important;
+        }
+        
+        .answer-key {
+            margin-top: 10px;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #28a745;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Auto-evaluación: Unidad 1</h1>
+            <p><strong>Las Organizaciones</strong></p>
+            <p>Organización y Gestión | 5to A - Técnicos en Informática</p>
+            <p style="margin-top: 10px; color: #764ba2;">👩‍🏫 Profesora: Verónica Vila Bordó</p>
+        </div>
+        
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <div class="question" data-answer="b">
+                <h3>1. ¿Qué es una organización según el concepto de sistema social?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q1" value="a" id="q1a">
+                        <label for="q1a">Un grupo de personas que trabajan en el mismo edificio</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="b" id="q1b">
+                        <label for="q1b">Un grupo de personas que trabajan juntas con objetivos comunes, usando recursos y procesos coordinados</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="c" id="q1c">
+                        <label for="q1c">Una empresa que tiene más de 100 empleados</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q1" value="d" id="q1d">
+                        <label for="q1d">Un conjunto de computadoras conectadas en red</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="question" data-answer="c">
+                <h3>2. ¿Cuál de las siguientes NO es una característica esencial de una organización?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q2" value="a" id="q2a">
+                        <label for="q2a">Tiene objetivos definidos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="b" id="q2b">
+                        <label for="q2b">Usa recursos (personas, dinero, tecnología)</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="c" id="q2c">
+                        <label for="q2c">Debe tener presencia en redes sociales</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q2" value="d" id="q2d">
+                        <label for="q2d">Interactúa con el entorno (clientes, proveedores, competencia)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 3 -->
+            <div class="question" data-answer="d">
+                <h3>3. En el análisis FODA, ¿dónde se ubican las fortalezas?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q3" value="a" id="q3a">
+                        <label for="q3a">Externo - Positivo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="b" id="q3b">
+                        <label for="q3b">Externo - Negativo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="c" id="q3c">
+                        <label for="q3c">Interno - Negativo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q3" value="d" id="q3d">
+                        <label for="q3d">Interno - Positivo</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 4 -->
+            <div class="question" data-answer="b">
+                <h3>4. ¿Quién es Michael Porter y por qué es importante en el estudio de las organizaciones?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q4" value="a" id="q4a">
+                        <label for="q4a">Creador de Facebook que revolucionó las redes sociales</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="b" id="q4b">
+                        <label for="q4b">Economista y profesor de Harvard que desarrolló el modelo de las 5 fuerzas competitivas</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="c" id="q4c">
+                        <label for="q4c">Inventor del análisis FODA</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q4" value="d" id="q4d">
+                        <label for="q4d">CEO de Microsoft</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 5 -->
+            <div class="question" data-answer="a">
+                <h3>5. La rivalidad entre competidores existentes es ALTA cuando:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q5" value="a" id="q5a">
+                        <label for="q5a">Hay muchos competidores del mismo tamaño y los productos son similares</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="b" id="q5b">
+                        <label for="q5b">Hay pocos competidores y el mercado está en crecimiento</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="c" id="q5c">
+                        <label for="q5c">Los productos son muy diferenciados</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q5" value="d" id="q5d">
+                        <label for="q5d">Los costos de cambio son muy altos para el cliente</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 6 -->
+            <div class="question" data-answer="c">
+                <h3>6. ¿Cuál es un ejemplo de BAJA amenaza de nuevos competidores?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q6" value="a" id="q6a">
+                        <label for="q6a">Desarrollo de apps móviles</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="b" id="q6b">
+                        <label for="q6b">Creación de páginas web</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="c" id="q6c">
+                        <label for="q6c">Desarrollo de sistemas operativos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q6" value="d" id="q6d">
+                        <label for="q6d">Venta de productos en marketplace</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 7 -->
+            <div class="question" data-answer="b">
+                <h3>7. ¿Qué son los productos sustitutos en el modelo de Porter?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q7" value="a" id="q7a">
+                        <label for="q7a">Productos idénticos de la competencia directa</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="b" id="q7b">
+                        <label for="q7b">Productos diferentes que satisfacen la misma necesidad</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="c" id="q7c">
+                        <label for="q7c">Productos más baratos de menor calidad</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q7" value="d" id="q7d">
+                        <label for="q7d">Productos que están descontinuados</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 8 -->
+            <div class="question" data-answer="d">
+                <h3>8. Netflix vs. Cine es un ejemplo de:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q8" value="a" id="q8a">
+                        <label for="q8a">Rivalidad entre competidores</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="b" id="q8b">
+                        <label for="q8b">Poder de negociación de clientes</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="c" id="q8c">
+                        <label for="q8c">Amenaza de nuevos competidores</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q8" value="d" id="q8d">
+                        <label for="q8d">Amenaza de productos sustitutos</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 9 -->
+            <div class="question" data-answer="a">
+                <h3>9. Los proveedores tienen ALTO poder de negociación cuando:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q9" value="a" id="q9a">
+                        <label for="q9a">Son pocos y tu producto depende críticamente de su insumo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="b" id="q9b">
+                        <label for="q9b">Hay muchos proveedores compitiendo entre sí</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="c" id="q9c">
+                        <label for="q9c">Los insumos son commodities fáciles de reemplazar</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q9" value="d" id="q9d">
+                        <label for="q9d">Puedes cambiar fácilmente de proveedor</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 10 -->
+            <div class="question" data-answer="c">
+                <h3>10. ¿Cuál es un ejemplo de ALTO poder de negociación de clientes?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q10" value="a" id="q10a">
+                        <label for="q10a">Una empresa SaaS con miles de clientes pequeños</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="b" id="q10b">
+                        <label for="q10b">Apple y su ecosistema de productos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="c" id="q10c">
+                        <label for="q10c">Una agencia de desarrollo que tiene un solo cliente grande</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q10" value="d" id="q10d">
+                        <label for="q10d">Un producto único sin alternativas reales</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 11 -->
+            <div class="question" data-answer="b">
+                <h3>11. ¿Cómo mejora el modelo de Porter el análisis FODA?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q11" value="a" id="q11a">
+                        <label for="q11a">Lo reemplaza completamente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q11" value="b" id="q11b">
+                        <label for="q11b">Lo hace sistemático y profesional, ayudando a identificar mejor amenazas y oportunidades</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q11" value="c" id="q11c">
+                        <label for="q11c">No tiene relación con el FODA</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q11" value="d" id="q11d">
+                        <label for="q11d">Solo sirve para identificar fortalezas</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 12 -->
+            <div class="question" data-answer="a">
+                <h3>12. En la matriz FODA, las OPORTUNIDADES se alimentan de Porter con:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q12" value="a" id="q12a">
+                        <label for="q12a">Bajas barreras de entrada y pocos sustitutos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q12" value="b" id="q12b">
+                        <label for="q12b">Alta rivalidad y muchos sustitutos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q12" value="c" id="q12c">
+                        <label for="q12c">Proveedores con alto poder</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q12" value="d" id="q12d">
+                        <label for="q12d">Producto fácil de sustituir</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 13 -->
+            <div class="question" data-answer="d">
+                <h3>13. ¿Qué son los niveles jerárquicos en una organización?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q13" value="a" id="q13a">
+                        <label for="q13a">Los pisos de un edificio corporativo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q13" value="b" id="q13b">
+                        <label for="q13b">Los diferentes departamentos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q13" value="c" id="q13c">
+                        <label for="q13c">Los años de antigüedad de los empleados</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q13" value="d" id="q13d">
+                        <label for="q13d">Las capas de autoridad y responsabilidad (quién manda a quién y quién decide qué)</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 14 -->
+            <div class="question" data-answer="c">
+                <h3>14. El nivel ESTRATÉGICO de una organización se caracteriza por:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q14" value="a" id="q14a">
+                        <label for="q14a">Ejecutar tareas diarias y resolver bugs</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q14" value="b" id="q14b">
+                        <label for="q14b">Coordinar equipos y supervisar objetivos mensuales</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q14" value="c" id="q14c">
+                        <label for="q14c">Definir visión, misión y objetivos de largo plazo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q14" value="d" id="q14d">
+                        <label for="q14d">Atender clientes y procesar datos</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 15 -->
+            <div class="question" data-answer="b">
+                <h3>15. Un Tech Lead que decide "dividir el proyecto en sprints de 2 semanas con 5 desarrolladores" está operando en el nivel:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q15" value="a" id="q15a">
+                        <label for="q15a">Estratégico</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q15" value="b" id="q15b">
+                        <label for="q15b">Táctico</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q15" value="c" id="q15c">
+                        <label for="q15c">Operativo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q15" value="d" id="q15d">
+                        <label for="q15d">Ninguno de los anteriores</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 16 -->
+            <div class="question" data-answer="c">
+                <h3>16. ¿Qué porcentaje aproximado de una organización tradicional representa el nivel operativo?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q16" value="a" id="q16a">
+                        <label for="q16a">5-10%</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q16" value="b" id="q16b">
+                        <label for="q16b">15-20%</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q16" value="c" id="q16c">
+                        <label for="q16c">70-80%</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q16" value="d" id="q16d">
+                        <label for="q16d">50%</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 17 -->
+            <div class="question" data-answer="a">
+                <h3>17. Las estructuras organizacionales planas (como Spotify con sus "squads") se caracterizan por:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q17" value="a" id="q17a">
+                        <label for="q17a">Menos niveles jerárquicos, más autonomía y decisiones más rápidas</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q17" value="b" id="q17b">
+                        <label for="q17b">Más burocracia y procesos formales</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q17" value="c" id="q17c">
+                        <label for="q17c">Mayor cantidad de supervisores</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q17" value="d" id="q17d">
+                        <label for="q17d">Comunicación exclusivamente vertical</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 18 -->
+            <div class="question" data-answer="d">
+                <h3>18. ¿Cuál de estos NO es un error frecuente al aplicar el modelo de Porter?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q18" value="a" id="q18a">
+                        <label for="q18a">Confundir rivalidad con amenaza de nuevos competidores</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q18" value="b" id="q18b">
+                        <label for="q18b">Creer que el análisis es "para siempre" sin revisarlo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q18" value="c" id="q18c">
+                        <label for="q18c">No identificar sustitutos de otras industrias</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q18" value="d" id="q18d">
+                        <label for="q18d">Revisar periódicamente las 5 fuerzas porque cambian con el tiempo</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 19 -->
+            <div class="question" data-answer="b">
+                <h3>19. El planeamiento estratégico se compara con un GPS porque:</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q19" value="a" id="q19a">
+                        <label for="q19a">Usa tecnología satelital</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q19" value="b" id="q19b">
+                        <label for="q19b">Defines destino, analizas el camino, elegís la mejor ruta y ajustas si hay imprevistos</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q19" value="c" id="q19c">
+                        <label for="q19c">Solo sirve para empresas de transporte</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q19" value="d" id="q19d">
+                        <label for="q19d">Siempre te lleva por el camino más largo</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 20 -->
+            <div class="question" data-answer="c">
+                <h3>20. ¿Cuál de las siguientes afirmaciones sobre Valve Corporation es correcta?</h3>
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" name="q20" value="a" id="q20a">
+                        <label for="q20a">Tiene la estructura jerárquica más alta de la industria tech</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q20" value="b" id="q20b">
+                        <label for="q20b">Fracasó por no tener managers</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q20" value="c" id="q20c">
+                        <label for="q20c">Es famosa por su estructura plana sin managers, donde los empleados eligen proyectos libremente</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="q20" value="d" id="q20d">
+                        <label for="q20d">Es un modelo replicable en cualquier empresa</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="gradeQuiz()">✅ Corregir Auto-evaluación</button>
+        </form>
+        
+        <div id="result" class="result"></div>
+    </div>
+
+    <script>
+        function gradeQuiz() {
+            const form = document.getElementById('quizForm');
+            const questions = document.querySelectorAll('.question');
+            let score = 0;
+            let answered = 0;
+            
+            questions.forEach((question, index) => {
+                const correctAnswer = question.getAttribute('data-answer');
+                const questionNumber = index + 1;
+                const selectedAnswer = document.querySelector(`input[name="q${questionNumber}"]:checked`);
+                
+                if (selectedAnswer) {
+                    answered++;
+                    if (selectedAnswer.value === correctAnswer) {
+                        score++;
+                        question.classList.add('correct');
+                        question.classList.remove('incorrect');
+                    } else {
+                        question.classList.add('incorrect');
+                        question.classList.remove('correct');
+                        
+                        // Mostrar respuesta correcta
+                        const existingKey = question.querySelector('.answer-key');
+                        if (existingKey) existingKey.remove();
+                        
+                        const answerKey = document.createElement('div');
+                        answerKey.className = 'answer-key';
+                        const correctLabel = document.querySelector(`#q${questionNumber}${correctAnswer}`).nextElementSibling.textContent;
+                        answerKey.innerHTML = `✓ Respuesta correcta: ${correctAnswer.toUpperCase()}) ${correctLabel}`;
+                        question.appendChild(answerKey);
+                    }
+                } else {
+                    question.classList.remove('correct', 'incorrect');
+                }
+            });
+            
+            // Mostrar resultado
+            const resultDiv = document.getElementById('result');
+            const percentage = Math.round((score / 20) * 100);
+            
+            let feedback = '';
+            let emoji = '';
+            
+            if (percentage >= 90) {
+                feedback = '¡Excelente! Dominás los conceptos de la unidad. 🌟';
+                emoji = '🎉';
+            } else if (percentage >= 70) {
+                feedback = '¡Muy bien! Tenés una buena comprensión del tema. 👏';
+                emoji = '😊';
+            } else if (percentage >= 50) {
+                feedback = 'Bien, pero te recomiendo repasar algunos conceptos. 📚';
+                emoji = '🤔';
+            } else {
+                feedback = 'Necesitás estudiar más esta unidad. ¡No te desanimes! 💪';
+                emoji = '📖';
+            }
+            
+            if (answered < 20) {
+                resultDiv.innerHTML = `
+                    <h2>⚠️ Evaluación Incompleta</h2>
+                    <p style="font-size: 1.2em;">Respondiste ${answered} de 20 preguntas</p>
+                    <p>Por favor, responde todas las preguntas antes de corregir.</p>
+                `;
+            } else {
+                resultDiv.innerHTML = `
+                    <h2>${emoji} Resultado de tu Auto-evaluación</h2>
+                    <div class="score">${score}/20</div>
+                    <p style="font-size: 1.5em; color: #667eea;">${percentage}%</p>
+                    <div class="feedback">${feedback}</div>
+                    <p style="margin-top: 20px; color: #888;">Las preguntas correctas están marcadas en verde 💚<br>Las incorrectas en rojo mostrando la respuesta correcta 📝</p>
+                `;
+            }
+            
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+    </script>
+</body>
+</html>

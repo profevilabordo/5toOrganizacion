@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Autoevaluación - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Test</span>
+                <span class="separator">•</span>
+                <span class="block-name">Autoevaluación Unidad 1</span>
+            </div>
+            <div class="test-timer" id="timer">
+                ⏱️ <span id="timeDisplay">00:00</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟢 Imprescindible • ⏱️ 30 minutos</div>
+            <h1 class="block-hero-title">📝 Test de Autoevaluación</h1>
+            <p class="block-hero-subtitle">Evaluá tus conocimientos sobre Porter, FODA y Niveles Jerárquicos</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="test-content">
+
+            <!-- Instrucciones -->
+            <section class="instrucciones-test" id="instrucciones">
+                <h2>📋 Instrucciones del Test</h2>
+                <div class="instrucciones-box">
+                    <ul>
+                        <li>✅ El test tiene <strong>15 preguntas</strong> de opción múltiple</li>
+                        <li>✅ Cada pregunta tiene <strong>solo una respuesta correcta</strong></li>
+                        <li>✅ Podés tomarte el tiempo que necesites (recomendado: 30 minutos)</li>
+                        <li>✅ Al finalizar vas a ver tu <strong>resultado instantáneo</strong> y feedback</li>
+                        <li>✅ Podés repetir el test cuantas veces quieras</li>
+                        <li>⚠️ Una vez que empezás, el cronómetro arranca automáticamente</li>
+                    </ul>
+
+                    <div class="puntaje-info">
+                        <h4>📊 Escala de Evaluación:</h4>
+                        <div class="escala-grid">
+                            <div class="escala-item excelente">
+                                <strong>90-100%</strong>
+                                <span>Excelente 🌟</span>
+                            </div>
+                            <div class="escala-item bueno">
+                                <strong>70-89%</strong>
+                                <span>Muy Bien 👍</span>
+                            </div>
+                            <div class="escala-item regular">
+                                <strong>50-69%</strong>
+                                <span>Regular 📚</span>
+                            </div>
+                            <div class="escala-item insuficiente">
+                                <strong>0-49%</strong>
+                                <span>Revisar contenidos 🔄</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-comenzar-test" onclick="iniciarTest()">
+                        🚀 Comenzar Test
+                    </button>
+                </div>
+            </section>
+
+            <!-- Formulario del Test -->
+            <form id="testForm" style="display: none;">
+                <div class="test-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Pregunta 1 de 15</span>
+                </div>
+
+                <!-- Pregunta 1 -->
+                <div class="pregunta-card" data-question="1">
+                    <h3 class="pregunta-titulo">1. ¿Qué es el Modelo de Porter?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q1" value="a">
+                            <span>a) Un modelo para analizar la estructura financiera de una empresa</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q1" value="b">
+                            <span>b) Un marco de 5 fuerzas para analizar la competencia en una industria</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q1" value="c">
+                            <span>c) Una herramienta para medir la satisfacción del cliente</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q1" value="d">
+                            <span>d) Un sistema de gestión de recursos humanos</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2 -->
+                <div class="pregunta-card" data-question="2">
+                    <h3 class="pregunta-titulo">2. ¿Cuándo la rivalidad entre competidores es ALTA?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q2" value="a">
+                            <span>a) Cuando hay pocos competidores y el mercado crece</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q2" value="b">
+                            <span>b) Cuando los productos son muy diferenciados</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q2" value="c">
+                            <span>c) Cuando hay muchos competidores y los productos son similares</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q2" value="d">
+                            <span>d) Cuando los costos de cambio para el cliente son altos</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3 -->
+                <div class="pregunta-card" data-question="3">
+                    <h3 class="pregunta-titulo">3. ¿Qué significa que existan "barreras de entrada bajas"?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q3" value="a">
+                            <span>a) Es difícil que nuevas empresas entren al mercado</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q3" value="b">
+                            <span>b) Es fácil que nuevas empresas entren a competir</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q3" value="c">
+                            <span>c) Solo empresas grandes pueden entrar al mercado</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q3" value="d">
+                            <span>d) No hay competencia en la industria</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4 -->
+                <div class="pregunta-card" data-question="4">
+                    <h3 class="pregunta-titulo">4. ¿Cuál es un ejemplo de producto SUSTITUTO?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q4" value="a">
+                            <span>a) Spotify vs Apple Music (competencia directa)</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q4" value="b">
+                            <span>b) Zoom vs Viajes de negocios (resuelven la misma necesidad de forma diferente)</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q4" value="c">
+                            <span>c) iPhone vs Samsung (competencia directa)</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q4" value="d">
+                            <span>d) Netflix vs HBO (competencia directa)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="pregunta-card" data-question="5">
+                    <h3 class="pregunta-titulo">5. ¿Cuándo tienen ALTO poder de negociación los proveedores?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q5" value="a">
+                            <span>a) Cuando hay muchos proveedores compitiendo</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q5" value="b">
+                            <span>b) Cuando son pocos proveedores y tu producto depende críticamente de ellos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q5" value="c">
+                            <span>c) Cuando puedes cambiar fácilmente de proveedor</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q5" value="d">
+                            <span>d) Cuando los insumos son commodities</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="pregunta-card" data-question="6">
+                    <h3 class="pregunta-titulo">6. En FODA, ¿qué representa la "O"?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q6" value="a">
+                            <span>a) Organización</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q6" value="b">
+                            <span>b) Oportunidades (factores externos positivos)</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q6" value="c">
+                            <span>c) Objetivos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q6" value="d">
+                            <span>d) Operaciones</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7 -->
+                <div class="pregunta-card" data-question="7">
+                    <h3 class="pregunta-titulo">7. ¿Cómo se relaciona Porter con FODA?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q7" value="a">
+                            <span>a) No tienen relación, son modelos completamente independientes</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q7" value="b">
+                            <span>b) Porter ayuda a identificar amenazas y oportunidades para el FODA</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q7" value="c">
+                            <span>c) FODA reemplaza a Porter</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q7" value="d">
+                            <span>d) Solo se usa Porter para empresas grandes</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8 -->
+                <div class="pregunta-card" data-question="8">
+                    <h3 class="pregunta-titulo">8. ¿Qué es el nivel ESTRATÉGICO en una organización?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q8" value="a">
+                            <span>a) Los empleados que ejecutan tareas diarias</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q8" value="b">
+                            <span>b) Los jefes de área que coordinan equipos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q8" value="c">
+                            <span>c) La alta dirección (CEO, directores) que define visión y objetivos de largo plazo</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q8" value="d">
+                            <span>d) Los supervisores de producción</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 9 -->
+                <div class="pregunta-card" data-question="9">
+                    <h3 class="pregunta-titulo">9. ¿Qué caracteriza a una estructura organizacional PLANA?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q9" value="a">
+                            <span>a) Muchos niveles jerárquicos entre CEO y empleados</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q9" value="b">
+                            <span>b) Pocos niveles jerárquicos y más autonomía para los equipos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q9" value="c">
+                            <span>c) Solo funciona en empresas tradicionales grandes</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q9" value="d">
+                            <span>d) No hay empleados, solo directores</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 10 -->
+                <div class="pregunta-card" data-question="10">
+                    <h3 class="pregunta-titulo">10. Spotify usa "squads" (equipos autónomos). ¿Qué tipo de estructura es?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q10" value="a">
+                            <span>a) Estructura tradicional piramidal</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q10" value="b">
+                            <span>b) Estructura plana u horizontal</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q10" value="c">
+                            <span>c) Estructura funcional clásica</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q10" value="d">
+                            <span>d) No tiene estructura organizacional</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 11 -->
+                <div class="pregunta-card" data-question="11">
+                    <h3 class="pregunta-titulo">11. ¿Por qué Facebook compró WhatsApp por $19,000 millones?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q11" value="a">
+                            <span>a) Porque WhatsApp era muy rentable</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q11" value="b">
+                            <span>b) Porque analizó las 5 fuerzas y vio que WhatsApp podía ser su mayor competidor</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q11" value="c">
+                            <span>c) Por capricho de Mark Zuckerberg</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q11" value="d">
+                            <span>d) Para cerrar WhatsApp y eliminar competencia</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 12 -->
+                <div class="pregunta-card" data-question="12">
+                    <h3 class="pregunta-titulo">12. ¿Qué empresa NO tiene jefes según vimos en la unidad?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q12" value="a">
+                            <span>a) Microsoft</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q12" value="b">
+                            <span>b) Valve (creadores de Steam)</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q12" value="c">
+                            <span>c) Netflix</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q12" value="d">
+                            <span>d) Apple</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 13 -->
+                <div class="pregunta-card" data-question="13">
+                    <h3 class="pregunta-titulo">13. En una startup de delivery, si hay muchos sustitutos (cocinar en casa, ir a buscar comida), eso es:</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q13" value="a">
+                            <span>a) Una fortaleza en FODA</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q13" value="b">
+                            <span>b) Una oportunidad en FODA</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q13" value="c">
+                            <span>c) Una amenaza en FODA</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q13" value="d">
+                            <span>d) Una debilidad en FODA</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 14 -->
+                <div class="pregunta-card" data-question="14">
+                    <h3 class="pregunta-titulo">14. ¿Qué hace un Tech Lead (nivel TÁCTICO)?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q14" value="a">
+                            <span>a) Define la visión de la empresa a 10 años</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q14" value="b">
+                            <span>b) Programa código todos los días</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q14" value="c">
+                            <span>c) Traduce la estrategia en planes concretos y coordina equipos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q14" value="d">
+                            <span>d) Atiende clientes por teléfono</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Pregunta 15 -->
+                <div class="pregunta-card" data-question="15">
+                    <h3 class="pregunta-titulo">15. ¿Cuál NO es una de las 5 Fuerzas de Porter?</h3>
+                    <div class="opciones">
+                        <label class="opcion">
+                            <input type="radio" name="q15" value="a">
+                            <span>a) Rivalidad entre competidores</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q15" value="b">
+                            <span>b) Poder de los empleados</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q15" value="c">
+                            <span>c) Amenaza de productos sustitutos</span>
+                        </label>
+                        <label class="opcion">
+                            <input type="radio" name="q15" value="d">
+                            <span>d) Poder de negociación de clientes</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-finalizar-test">
+                    ✅ Finalizar Test y Ver Resultados
+                </button>
+            </form>
+
+            <!-- Resultados -->
+            <section id="resultados" style="display: none;">
+                <div class="resultados-box">
+                    <h2>🎉 ¡Test Completado!</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span class="score-number" id="scoreNumber">0</span>
+                            <span class="score-percent">%</span>
+                        </div>
+                        <div class="score-details">
+                            <p class="score-text" id="scoreText"></p>
+                            <p class="score-fraction" id="scoreFraction"></p>
+                            <p class="score-time" id="scoreTime"></p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-box" id="feedback"></div>
+
+                    <div class="resultados-acciones">
+                        <button class="btn-ver-respuestas" onclick="verRespuestas()">
+                            📋 Ver Respuestas Correctas
+                        </button>
+                        <button class="btn-repetir" onclick="repetirTest()">
+                            🔄 Repetir Test
+                        </button>
+                        <a href="index.html" class="btn-volver">
+                            ← Volver a la Unidad
+                        </a>
+                    </div>
+                </div>
+
+                <div id="respuestasDetalladas" style="display: none;">
+                    <!-- Se llenará dinámicamente con JavaScript -->
+                </div>
+            </section>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        // Respuestas correctas
+        const respuestasCorrectas = {
+            q1: 'b', q2: 'c', q3: 'b', q4: 'b', q5: 'b',
+            q6: 'b', q7: 'b', q8: 'c', q9: 'b', q10: 'b',
+            q11: 'b', q12: 'b', q13: 'c', q14: 'c', q15: 'b'
+        };
+
+        // Explicaciones de respuestas
+        const explicaciones = {
+            q1: 'El Modelo de Porter analiza 5 fuerzas competitivas en una industria.',
+            q2: 'La rivalidad es alta cuando hay muchos competidores y productos similares.',
+            q3: 'Barreras bajas significa que es fácil para nuevas empresas entrar.',
+            q4: 'Zoom vs Viajes resuelven la misma necesidad de forma diferente.',
+            q5: 'Proveedores tienen alto poder cuando son pocos y críticos para tu producto.',
+            q6: 'En FODA, O = Oportunidades (factores externos positivos).',
+            q7: 'Porter ayuda a identificar amenazas y oportunidades para alimentar el FODA.',
+            q8: 'El nivel estratégico es la alta dirección que define visión y objetivos.',
+            q9: 'Estructuras planas tienen pocos niveles y más autonomía.',
+            q10: 'Los "squads" de Spotify son un ejemplo de estructura horizontal.',
+            q11: 'Facebook usó análisis Porter para identificar a WhatsApp como amenaza.',
+            q12: 'Valve Corporation no tiene managers, estructura 100% plana.',
+            q13: 'Muchos sustitutos es una amenaza en el análisis FODA.',
+            q14: 'El nivel táctico traduce estrategia en planes y coordina equipos.',
+            q15: 'Las 5 fuerzas NO incluyen "Poder de los empleados".'
+        };
+
+        let tiempoInicio;
+        let intervaloTiempo;
+        let tiempoTotal = 0;
+
+        function iniciarTest() {
+            document.getElementById('instrucciones').style.display = 'none';
+            document.getElementById('testForm').style.display = 'block';
+            tiempoInicio = Date.now();
+            
+            intervaloTiempo = setInterval(() => {
+                const ahora = Date.now();
+                const diferencia = Math.floor((ahora - tiempoInicio) / 1000);
+                const minutos = Math.floor(diferencia / 60);
+                const segundos = diferencia % 60;
+                document.getElementById('timeDisplay').textContent = 
+                    `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+            }, 1000);
+
+            // Scroll suave al formulario
+            document.getElementById('testForm').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Actualizar barra de progreso al seleccionar opciones
+        document.addEventListener('DOMContentLoaded', () => {
+            const radios = document.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => {
+                radio.addEventListener('change', actualizarProgreso);
+            });
+        });
+
+        function actualizarProgreso() {
+            const totalPreguntas = 15;
+            let respondidas = 0;
+            
+            for (let i = 1; i <= totalPreguntas; i++) {
+                const pregunta = document.querySelector(`input[name="q${i}"]:checked`);
+                if (pregunta) respondidas++;
+            }
+            
+            const porcentaje = (respondidas / totalPreguntas) * 100;
+            document.getElementById('progressFill').style.width = porcentaje + '%';
+            document.getElementById('progressText').textContent = 
+                `Pregunta ${respondidas} de ${totalPreguntas} respondidas`;
+        }
+
+        document.getElementById('testForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            clearInterval(intervaloTiempo);
+            tiempoTotal = Math.floor((Date.now() - tiempoInicio) / 1000);
+            
+            // Calcular puntaje
+            let correctas = 0;
+            const respuestasUsuario = {};
+            
+            for (let i = 1; i <= 15; i++) {
+                const seleccionada = document.querySelector(`input[name="q${i}"]:checked`);
+                if (seleccionada) {
+                    respuestasUsuario[`q${i}`] = seleccionada.value;
+                    if (seleccionada.value === respuestasCorrectas[`q${i}`]) {
+                        correctas++;
+                    }
+                }
+            }
+            
+            const porcentaje = Math.round((correctas / 15) * 100);
+            
+            // Guardar resultados en localStorage
+            localStorage.setItem('ultimoTestUnidad1', JSON.stringify({
+                puntaje: porcentaje,
+                correctas: correctas,
+                tiempo: tiempoTotal,
+                fecha: new Date().toISOString(),
+                respuestas: respuestasUsuario
+            }));
+            
+            mostrarResultados(porcentaje, correctas, respuestasUsuario);
+        });
+
+        function mostrarResultados(porcentaje, correctas, respuestasUsuario) {
+            document.getElementById('testForm').style.display = 'none';
+            document.getElementById('resultados').style.display = 'block';
+            
+            document.getElementById('scoreNumber').textContent = porcentaje;
+            document.getElementById('scoreFraction').textContent = 
+                `${correctas} de 15 preguntas correctas`;
+            
+            const minutos = Math.floor(tiempoTotal / 60);
+            const segundos = tiempoTotal % 60;
+            document.getElementById('scoreTime').textContent = 
+                `Tiempo: ${minutos}:${String(segundos).padStart(2, '0')}`;
+            
+            // Feedback según puntaje
+            const feedbackDiv = document.getElementById('feedback');
+            const scoreText = document.getElementById('scoreText');
+            
+            if (porcentaje >= 90) {
+                scoreText.textContent = '¡Excelente! 🌟';
+                feedbackDiv.innerHTML = `
+                    <p><strong>¡Felicitaciones!</strong> Dominás completamente los conceptos de la Unidad 1.</p>
+                    <p>Estás más que preparado/a para la evaluación formal.</p>
+                `;
+                feedbackDiv.className = 'feedback-box excelente';
+            } else if (porcentaje >= 70) {
+                scoreText.textContent = '¡Muy Bien! 👍';
+                feedbackDiv.innerHTML = `
+                    <p><strong>¡Buen trabajo!</strong> Tenés un sólido entendimiento de los temas.</p>
+                    <p>Revisá las preguntas que erraste para reforzar algunos conceptos.</p>
+                `;
+                feedbackDiv.className = 'feedback-box bueno';
+            } else if (porcentaje >= 50) {
+                scoreText.textContent = 'Regular 📚';
+                feedbackDiv.innerHTML = `
+                    <p><strong>Vas bien,</strong> pero necesitás repasar algunos temas.</p>
+                    <p>Te recomiendo revisar los bloques 3, 4, 5 y 6 sobre Porter y FODA.</p>
+                `;
+                feedbackDiv.className = 'feedback-box regular';
+            } else {
+                scoreText.textContent = 'Revisar contenidos 🔄';
+                feedbackDiv.innerHTML = `
+                    <p><strong>Necesitás estudiar más</strong> los contenidos de la unidad.</p>
+                    <p>Repasá todos los bloques y hacé el test nuevamente.</p>
+                `;
+                feedbackDiv.className = 'feedback-box insuficiente';
+            }
+            
+            // Marcar bloque 10 como completado
+            window.markBlockAsComplete(10);
+            
+            document.getElementById('resultados').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function verRespuestas() {
+            const respuestasDiv = document.getElementById('respuestasDetalladas');
+            const guardado = JSON.parse(localStorage.getItem('ultimoTestUnidad1'));
+            
+            let html = '<h2>📋 Respuestas Detalladas</h2><div class="respuestas-lista">';
+            
+            for (let i = 1; i <= 15; i++) {
+                const pregunta = `q${i}`;
+                const respuestaUsuario = guardado.respuestas[pregunta];
+                const correcta = respuestasCorrectas[pregunta];
+                const esCorrecta = respuestaUsuario === correcta;
+                
+                html += `
+                    <div class="respuesta-detalle ${esCorrecta ? 'correcta' : 'incorrecta'}">
+                        <h4>Pregunta ${i} ${esCorrecta ? '✅' : '❌'}</h4>
+                        <p><strong>Tu respuesta:</strong> ${respuestaUsuario ? respuestaUsuario.toUpperCase() : 'No respondida'}</p>
+                        <p><strong>Respuesta correcta:</strong> ${correcta.toUpperCase()}</p>
+                        <p class="explicacion">${explicaciones[pregunta]}</p>
+                    </div>
+                `;
+            }
+            
+            html += '</div>';
+            respuestasDiv.innerHTML = html;
+            respuestasDiv.style.display = 'block';
+            respuestasDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function repetirTest() {
+            location.reload();
+        }
+    </script>
+
+    <style>
+        .test-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .test-timer {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            font-size: 1.125rem;
+        }
+
+        .instrucciones-test {
+            margin: 3rem 0;
+        }
+
+        .instrucciones-box {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .instrucciones-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0;
+        }
+
+        .instrucciones-box li {
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .puntaje-info {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(139, 92, 246, 0.05));
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+
+        .puntaje-info h4 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .escala-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .escala-item {
+            text-align: center;
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            border: 2px solid;
+        }
+
+        .escala-item.excelente {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--success);
+        }
+
+        .escala-item.bueno {
+            background: rgba(37, 99, 235, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .escala-item.regular {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--warning);
+        }
+
+        .escala-item.insuficiente {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: var(--danger);
+        }
+
+        .escala-item strong {
+            display: block;
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .btn-comenzar-test {
+            display: block;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            color: white;
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .btn-comenzar-test:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .test-progress {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .progress-bar {
+            height: 12px;
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 0.75rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-purple));
+            transition: width 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .pregunta-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid var(--primary-blue);
+        }
+
+        .pregunta-titulo {
+            margin: 0 0 1.5rem 0;
+            color: var(--primary-blue);
+            font-size: 1.25rem;
+        }
+
+        .opciones {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .opcion {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 1.5rem;
+            background: rgba(37, 99, 235, 0.03);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .opcion:hover {
+            background: rgba(37, 99, 235, 0.08);
+            border-color: var(--primary-blue);
+        }
+
+        .opcion input[type="radio"] {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .opcion span {
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        .btn-finalizar-test {
+            display: block;
+            width: 100%;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, var(--success), #059669);
+            color: white;
+            border: none;
+            border-radius: var(--radius-lg);
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .btn-finalizar-test:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+
+        .resultados-box {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .resultados-box h2 {
+            margin-top: 0;
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+        }
+
+        .score-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .score-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+        }
+
+        .score-number {
+            font-size: 5rem;
+            font-weight: 800;
+            color: white;
+            font-family: var(--font-display);
+        }
+
+        .score-percent {
+            font-size: 2rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .score-details {
+            text-align: left;
+        }
+
+        .score-text {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 1rem 0;
+        }
+
+        .score-fraction,
+        .score-time {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        .feedback-box {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            border-left: 6px solid;
+        }
+
+        .feedback-box.excelente {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--success);
+        }
+
+        .feedback-box.bueno {
+            background: rgba(37, 99, 235, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .feedback-box.regular {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--warning);
+        }
+
+        .feedback-box.insuficiente {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: var(--danger);
+        }
+
+        .resultados-acciones {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .btn-ver-respuestas,
+        .btn-repetir,
+        .btn-volver {
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.125rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-ver-respuestas {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+        }
+
+        .btn-repetir {
+            background: var(--accent-orange);
+            color: white;
+            border: none;
+        }
+
+        .btn-volver {
+            background: var(--text-light);
+            color: var(--text-primary);
+        }
+
+        .btn-ver-respuestas:hover,
+        .btn-repetir:hover,
+        .btn-volver:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .respuestas-lista {
+            margin-top: 2rem;
+        }
+
+        .respuesta-detalle {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid;
+        }
+
+        .respuesta-detalle.correcta {
+            border-left-color: var(--success);
+        }
+
+        .respuesta-detalle.incorrecta {
+            border-left-color: var(--danger);
+        }
+
+        .respuesta-detalle h4 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .explicacion {
+            background: rgba(37, 99, 235, 0.05);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .test-content {
+                padding: 1rem;
+            }
+
+            .score-display {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .score-circle {
+                width: 150px;
+                height: 150px;
+            }
+
+            .score-number {
+                font-size: 4rem;
+            }
+
+            .resultados-acciones {
+                flex-direction: column;
+            }
+        }
+    </style>
+</body>
+</html>
