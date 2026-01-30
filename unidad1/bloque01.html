@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 1: Introducción y Conexión - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 1</span>
+                <span class="separator">•</span>
+                <span class="block-name">Introducción y Conexión</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟢 Imprescindible • ⏱️ 15 minutos</div>
+            <h1 class="block-hero-title">Introducción y Conexión</h1>
+            <p class="block-hero-subtitle">¿Por qué estudiar esto? Casos reales del mundo tech</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+            
+            <!-- Roadmap Visual -->
+            <section class="roadmap-visual">
+                <h2>🚀 ROADMAP DE LA UNIDAD</h2>
+                <div class="roadmap-boxes">
+                    <div class="roadmap-box active">
+                        <span class="roadmap-icon">📍</span>
+                        <strong>REVISIÓN</strong>
+                        <small>(ya lo viste)</small>
+                    </div>
+                    <span class="roadmap-arrow">→</span>
+                    <div class="roadmap-box">
+                        <span class="roadmap-icon">🎯</span>
+                        <strong>NUEVO CONTENIDO</strong>
+                        <small>(Porter + FODA profundo)</small>
+                    </div>
+                    <span class="roadmap-arrow">→</span>
+                    <div class="roadmap-box">
+                        <span class="roadmap-icon">💪</span>
+                        <strong>APLICACIÓN</strong>
+                        <small>(casos reales)</small>
+                    </div>
+                    <span class="roadmap-arrow">→</span>
+                    <div class="roadmap-box">
+                        <span class="roadmap-icon">🏆</span>
+                        <strong>DOMINIO</strong>
+                        <small>(¡Listo!)</small>
+                    </div>
+                </div>
+                <div class="roadmap-goal">
+                    <strong>Meta de esta unidad:</strong> Entender cómo las organizaciones (empresas tech, startups, estudios de desarrollo) analizan su entorno para tomar decisiones estratégicas que las mantienen competitivas.
+                </div>
+            </section>
+
+            <!-- Conexión con la Realidad -->
+            <section class="conexion-realidad">
+                <h2>👉 CONEXIÓN CON LA REALIDAD</h2>
+                
+                <div class="realidad-card">
+                    <h3>¿Dónde aparece este tema en la vida cotidiana?</h3>
+                    
+                    <div class="ejemplo">
+                        <div class="ejemplo-icon">📺</div>
+                        <div class="ejemplo-content">
+                            <h4>¿Por qué Netflix invierte millones en series propias?</h4>
+                            <p>Porque analizó las <strong>"5 Fuerzas de Porter"</strong> y vio que depender solo de contenido ajeno era un riesgo.</p>
+                        </div>
+                    </div>
+
+                    <div class="ejemplo">
+                        <div class="ejemplo-icon">📦</div>
+                        <div class="ejemplo-content">
+                            <h4>¿Por qué MercadoLibre compró empresas de logística?</h4>
+                            <p>Estrategia para controlar toda la cadena y competir mejor.</p>
+                        </div>
+                    </div>
+
+                    <div class="ejemplo">
+                        <div class="ejemplo-icon">🚀</div>
+                        <div class="ejemplo-content">
+                            <h4>¿Por qué algunas startups quiebran y otras explotan?</h4>
+                            <p>Porque algunas hacen análisis FODA real y otras solo "prueban a ver qué pasa".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="realidad-card">
+                    <h3>¿En qué trabajo usás esto?</h3>
+                    
+                    <div class="trabajo-grid">
+                        <div class="trabajo-item">
+                            <span class="trabajo-emoji">💼</span>
+                            <strong>Product Manager</strong>
+                            <p>Decide qué funcionalidades desarrollar según la competencia.</p>
+                        </div>
+                        <div class="trabajo-item">
+                            <span class="trabajo-emoji">👨‍💻</span>
+                            <strong>Tech Lead</strong>
+                            <p>Evalúa si conviene desarrollar in-house o contratar servicios.</p>
+                        </div>
+                        <div class="trabajo-item">
+                            <span class="trabajo-emoji">🚀</span>
+                            <strong>Emprendedor tech</strong>
+                            <p>Analiza el mercado antes de lanzar una app.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="realidad-card why-matters">
+                    <h3>¿Por qué te conviene entenderlo?</h3>
+                    <p>Porque cuando trabajes en una empresa de tecnología, vas a participar en reuniones donde se decide:</p>
+                    <ul class="decision-list">
+                        <li>¿Entramos a competir con este producto?</li>
+                        <li>¿Bajamos precios o mejoramos calidad?</li>
+                        <li>¿Nos asociamos o competimos?</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <strong>💡 Si entendés Porter y FODA, no solo ejecutás código... ¡participás de las decisiones estratégicas! 💼</strong>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preguntas Disparadoras -->
+            <section class="preguntas-section">
+                <h2>🤔 Preguntas para Pensar</h2>
+                <p class="intro-text">Antes de seguir, reflexioná sobre estas preguntas. No hay respuestas correctas o incorrectas, es para activar tu pensamiento:</p>
+                
+                <div class="pregunta-card">
+                    <span class="pregunta-num">1</span>
+                    <p>¿Qué empresas tech que conocés están compitiendo fuertemente ahora mismo? (Ej: Spotify vs YouTube Music, WhatsApp vs Telegram)</p>
+                </div>
+
+                <div class="pregunta-card">
+                    <span class="pregunta-num">2</span>
+                    <p>¿Por qué algunas apps son gratis y otras pagas? ¿Tiene que ver con su estrategia competitiva?</p>
+                </div>
+
+                <div class="pregunta-card">
+                    <span class="pregunta-num">3</span>
+                    <p>Si tuvieras que lanzar una startup tech mañana, ¿qué cosas analizarías antes de empezar?</p>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="index.html" class="btn-nav btn-prev">
+                    <span>←</span> Volver al índice
+                </a>
+                <a href="bloque02.html" class="btn-nav btn-next">
+                    Siguiente: Repaso Express <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(1);
+            alert('✅ ¡Bloque 1 completado! Avanzá al siguiente.');
+        }
+    </script>
+</body>
+</html>

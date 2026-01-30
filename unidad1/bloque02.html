@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2: Repaso Express - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 2</span>
+                <span class="separator">•</span>
+                <span class="block-name">Repaso Express</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟢 Imprescindible • ⏱️ 30 minutos</div>
+            <h1 class="block-hero-title">🔄 Repaso Express</h1>
+            <p class="block-hero-subtitle">Lo que ya viste en 4to: Sistema social, fines, funciones, FODA básico</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+            
+            <section class="intro-block">
+                <p class="lead-text">Este bloque es un <strong>repaso rápido</strong> de conceptos que ya viste en 4to año en Fundamentos de Gestión. No te preocupes si no lo recordás perfectamente, lo vamos a repasar y después lo vamos a usar para ir más profundo con Porter y FODA avanzado.</p>
+            </section>
+
+            <!-- La Organización como Sistema Social -->
+            <section>
+                <h2>🟢 La organización como sistema social</h2>
+                
+                <div class="concept-box">
+                    <h3>Recordá:</h3>
+                    <p>Una <strong>organización</strong> es un grupo de personas que trabajan juntas con objetivos comunes, usando recursos y procesos coordinados.</p>
+                </div>
+
+                <h4>Características:</h4>
+                <ul class="feature-list">
+                    <li><strong>Tiene objetivos</strong> (ganar dinero, dar un servicio, cumplir una misión)</li>
+                    <li><strong>Usa recursos</strong> (personas, dinero, tecnología)</li>
+                    <li><strong>Tiene estructura</strong> (roles, jerarquías, áreas)</li>
+                    <li><strong>Interactúa con el entorno</strong> (clientes, proveedores, competencia, leyes)</li>
+                </ul>
+
+                <div class="ejemplo-tech">
+                    <h4>Ejemplo tech: Una empresa de desarrollo de software es una organización:</h4>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <span class="tech-icon">🎯</span>
+                            <strong>Objetivo</strong>
+                            <p>Crear apps/sistemas de calidad y rentables</p>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🛠️</span>
+                            <strong>Recursos</strong>
+                            <p>Programadores, diseñadores, servidores, capital</p>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🏢</span>
+                            <strong>Estructura</strong>
+                            <p>Área de desarrollo, ventas, soporte, administración</p>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-icon">🌍</span>
+                            <strong>Entorno</strong>
+                            <p>Clientes, competidores, nuevas tecnologías, regulaciones</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fines y Funciones -->
+            <section>
+                <h2>🟢 Fines y funciones</h2>
+                
+                <div class="definition-box">
+                    <div class="def-item">
+                        <strong>Fines:</strong>
+                        <p>Lo que la organización quiere lograr a largo plazo (su "razón de ser").</p>
+                    </div>
+                    <div class="def-item">
+                        <strong>Funciones:</strong>
+                        <p>Actividades que debe hacer para lograr esos fines.</p>
+                    </div>
+                </div>
+
+                <h4>Funciones básicas en una empresa:</h4>
+                <div class="funciones-grid">
+                    <div class="funcion-card">
+                        <div class="funcion-icon">⚙️</div>
+                        <strong>Producción/Operaciones</strong>
+                        <p>Crear el producto o servicio</p>
+                        <small class="tech-note">En IT: desarrollo</small>
+                    </div>
+                    <div class="funcion-card">
+                        <div class="funcion-icon">📢</div>
+                        <strong>Comercialización/Ventas</strong>
+                        <p>Vender y promocionar</p>
+                    </div>
+                    <div class="funcion-card">
+                        <div class="funcion-icon">💰</div>
+                        <strong>Finanzas</strong>
+                        <p>Manejar el dinero, inversiones, costos</p>
+                    </div>
+                    <div class="funcion-card">
+                        <div class="funcion-icon">👥</div>
+                        <strong>Recursos Humanos</strong>
+                        <p>Reclutar, capacitar, gestionar personas</p>
+                    </div>
+                    <div class="funcion-card">
+                        <div class="funcion-icon">📊</div>
+                        <strong>Administración</strong>
+                        <p>Coordinar todo</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FODA Básico -->
+            <section>
+                <h2>🟡 Repaso FODA (Fortalezas, Oportunidades, Debilidades, Amenazas)</h2>
+                
+                <p class="intro-text">Ya lo viste, pero ahora lo vamos a aplicar en serio con casos reales de empresas tech.</p>
+
+                <div class="foda-visual">
+                    <h4>Matriz FODA básica:</h4>
+                    <div class="foda-matrix">
+                        <div class="foda-cell fortalezas">
+                            <div class="foda-header">💪 FORTALEZAS</div>
+                            <div class="foda-desc">Interno • Positivo</div>
+                            <p>Lo que hacés BIEN</p>
+                        </div>
+                        <div class="foda-cell oportunidades">
+                            <div class="foda-header">🌟 OPORTUNIDADES</div>
+                            <div class="foda-desc">Externo • Positivo</div>
+                            <p>Chances del mercado</p>
+                        </div>
+                        <div class="foda-cell debilidades">
+                            <div class="foda-header">⚠️ DEBILIDADES</div>
+                            <div class="foda-desc">Interno • Negativo</div>
+                            <p>Lo que te falta mejorar</p>
+                        </div>
+                        <div class="foda-cell amenazas">
+                            <div class="foda-header">⚡ AMENAZAS</div>
+                            <div class="foda-desc">Externo • Negativo</div>
+                            <p>Peligros del entorno</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="note-box">
+                    <strong>📌 Lo vamos a retomar después del Modelo de Porter</strong>, porque Porter te ayuda a identificar mejor las amenazas y oportunidades.
+                </div>
+            </section>
+
+            <!-- Planeamiento Estratégico -->
+            <section>
+                <h2>🟡 Planeamiento estratégico (recordatorio)</h2>
+                
+                <p>Es el proceso de:</p>
+                <ol class="process-list">
+                    <li>Definir <strong>hacia dónde querés ir</strong> (visión, misión, objetivos)</li>
+                    <li>Analizar <strong>dónde estás</strong> (FODA, Porter)</li>
+                    <li>Decidir <strong>cómo llegar</strong> (estrategias)</li>
+                    <li><strong>Ejecutar y controlar</strong></li>
+                </ol>
+
+                <div class="analogy-box">
+                    <h4>💡 Pensalo como el GPS de una empresa:</h4>
+                    <div class="gps-steps">
+                        <div class="gps-step">
+                            <span class="step-num">1</span>
+                            <p>Sabés tu destino</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="gps-step">
+                            <span class="step-num">2</span>
+                            <p>Analizás el camino (obstáculos, rutas alternativas)</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="gps-step">
+                            <span class="step-num">3</span>
+                            <p>Elegís la mejor ruta</p>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div class="gps-step">
+                            <span class="step-num">4</span>
+                            <p>Ajustás si hay imprevistos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resumen -->
+            <section class="resumen-section">
+                <h2>📝 Resumen del Repaso</h2>
+                <div class="resumen-box">
+                    <p>Ahora que refrescamos estos conceptos, estamos listos para:</p>
+                    <ul>
+                        <li>✅ Aprender el <strong>Modelo de Porter</strong> (herramienta pro para analizar competencia)</li>
+                        <li>✅ Hacer <strong>FODA avanzado</strong> (no solo intuición, sino análisis serio)</li>
+                        <li>✅ Aplicarlo a <strong>casos reales de empresas tech</strong></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="bloque01.html" class="btn-nav btn-prev">
+                    <span>←</span> Anterior: Introducción
+                </a>
+                <a href="bloque03.html" class="btn-nav btn-next">
+                    Siguiente: Modelo de Porter <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(2);
+            alert('✅ ¡Bloque 2 completado! Ahora vamos con Porter.');
+        }
+    </script>
+
+    <style>
+        .lead-text {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            background: rgba(37, 99, 235, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .concept-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .concept-box h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 1rem 1.5rem;
+            background: white;
+            border-radius: var(--radius-md);
+            margin-bottom: 0.75rem;
+            border-left: 4px solid var(--primary-blue);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .ejemplo-tech {
+            background: rgba(37, 99, 235, 0.03);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .tech-item strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .definition-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .def-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            border-top: 4px solid var(--accent-purple);
+        }
+
+        .def-item strong {
+            display: block;
+            color: var(--accent-purple);
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .funciones-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .funcion-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .funcion-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-blue);
+        }
+
+        .funcion-icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .funcion-card strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .tech-note {
+            display: block;
+            color: var(--accent-orange);
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .foda-visual {
+            margin: 2rem 0;
+        }
+
+        .foda-matrix {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .foda-cell {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .foda-header {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .foda-desc {
+            font-size: 0.875rem;
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .fortalezas {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            border: 2px solid var(--success);
+        }
+
+        .fortalezas .foda-header {
+            color: var(--success);
+        }
+
+        .oportunidades {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .oportunidades .foda-header {
+            color: var(--primary-blue);
+        }
+
+        .debilidades {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+            border: 2px solid var(--warning);
+        }
+
+        .debilidades .foda-header {
+            color: var(--warning);
+        }
+
+        .amenazas {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+            border: 2px solid var(--danger);
+        }
+
+        .amenazas .foda-header {
+            color: var(--danger);
+        }
+
+        .note-box {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--accent-orange);
+            margin: 2rem 0;
+        }
+
+        .process-list {
+            background: white;
+            padding: 2rem 2rem 2rem 3rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            margin: 2rem 0;
+        }
+
+        .process-list li {
+            margin-bottom: 1rem;
+        }
+
+        .analogy-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            border: 2px solid var(--accent-purple);
+        }
+
+        .analogy-box h4 {
+            color: var(--accent-purple);
+            margin-top: 0;
+        }
+
+        .gps-steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .gps-step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            flex: 1;
+            min-width: 150px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .step-num {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--accent-purple);
+            color: white;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .gps-steps .arrow {
+            font-size: 1.5rem;
+            color: var(--accent-purple);
+            font-weight: bold;
+        }
+
+        .resumen-section {
+            margin-top: 4rem;
+        }
+
+        .resumen-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 2px solid var(--success);
+        }
+
+        .resumen-box ul {
+            margin: 1rem 0 0 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .resumen-box li {
+            padding: 0.75rem 0;
+            font-size: 1.125rem;
+        }
+
+        @media (max-width: 768px) {
+            .foda-matrix {
+                grid-template-columns: 1fr;
+            }
+
+            .gps-steps {
+                flex-direction: column;
+            }
+
+            .gps-steps .arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</body>
+</html>

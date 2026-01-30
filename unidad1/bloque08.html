@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 8: Actividades y Autoevaluación - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 8</span>
+                <span class="separator">•</span>
+                <span class="block-name">Actividades y Autoevaluación</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟡 Importante • ⏱️ Flexible</div>
+            <h1 class="block-hero-title">🎯 Actividades y Autoevaluación</h1>
+            <p class="block-hero-subtitle">Elegí tu actividad, checklist de conceptos, reflexión metacognitiva</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+
+            <!-- Checklist de Conceptos -->
+            <section>
+                <h2>📦 Checklist de Conceptos Clave</h2>
+                <p class="intro-checklist">Antes de seguir, asegurate de dominar estos conceptos. Marcá los que ya conocés:</p>
+                
+                <div class="concepts-checklist-big">
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c1">
+                        <span class="concept-text">Organización como sistema social: Concepto, fines, funciones</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c2">
+                        <span class="concept-text">Las 5 Fuerzas de Porter: Rivalidad, nuevos competidores, sustitutos, poder de proveedores, poder de clientes</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c3">
+                        <span class="concept-text">Cómo aplicar Porter para identificar oportunidades y amenazas</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c4">
+                        <span class="concept-text">FODA: Fortalezas, Oportunidades, Debilidades, Amenazas</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c5">
+                        <span class="concept-text">Conexión Porter ↔ FODA</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c6">
+                        <span class="concept-text">Planeamiento estratégico: Visión, análisis, estrategia, ejecución</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c7">
+                        <span class="concept-text">Niveles jerárquicos: Estratégico, Táctico, Operativo</span>
+                    </label>
+                    <label class="concept-item-big">
+                        <input type="checkbox" id="c8">
+                        <span class="concept-text">Diferencias entre estructuras jerárquicas tradicionales vs. planas</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Errores Frecuentes -->
+            <section class="errores-section">
+                <h2>⚠️ ERRORES FRECUENTES / TRAMPAS TÍPICAS</h2>
+                
+                <div class="error-card">
+                    <div class="error-num">1️⃣</div>
+                    <div class="error-content">
+                        <h4>Confundir rivalidad con amenaza de nuevos competidores</h4>
+                        <p><strong>Rivalidad:</strong> Los que ya están compitiendo ahora</p>
+                        <p><strong>Nuevos competidores:</strong> Los que podrían entrar mañana</p>
+                    </div>
+                </div>
+
+                <div class="error-card">
+                    <div class="error-num">2️⃣</div>
+                    <div class="error-content">
+                        <h4>Pensar que FODA es "adivinar"</h4>
+                        <p>FODA no es intuición. Se alimenta de análisis serio (Porter, datos del mercado, estudios)</p>
+                    </div>
+                </div>
+
+                <div class="error-card">
+                    <div class="error-num">3️⃣</div>
+                    <div class="error-content">
+                        <h4>Identificar solo fortalezas y oportunidades</h4>
+                        <p>Ser honesto con debilidades y amenazas es clave. Si no las ves venir, te destruyen.</p>
+                    </div>
+                </div>
+
+                <div class="error-card">
+                    <div class="error-num">4️⃣</div>
+                    <div class="error-content">
+                        <h4>Creer que un análisis Porter es "para siempre"</h4>
+                        <p>Las 5 fuerzas cambian. Hay que revisarlas periódicamente.</p>
+                        <p class="ejemplo-error"><strong>Ejemplo:</strong> "Poder de clientes" era bajo, pero apareció una app que compara precios → ahora es alto.</p>
+                    </div>
+                </div>
+
+                <div class="error-card">
+                    <div class="error-num">5️⃣</div>
+                    <div class="error-content">
+                        <h4>Pensar que menos niveles jerárquicos = siempre mejor</h4>
+                        <p>Estructuras planas funcionan para equipos chicos y maduros. En organizaciones grandes, a veces se necesita más estructura.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Actividades -->
+            <section class="actividades-section">
+                <h2>🎯 ACTIVIDADES (Elegí 1 de las 3)</h2>
+                <p class="intro-actividades">Todas valen lo mismo. Elegí el formato que más te guste:</p>
+
+                <div class="actividades-grid">
+                    <!-- Opción A -->
+                    <div class="actividad-card opcion-a">
+                        <div class="actividad-header">
+                            <div class="opcion-badge">OPCIÓN A</div>
+                            <h3>Caso práctico real</h3>
+                        </div>
+                        <div class="actividad-body">
+                            <p>Elegí una empresa tech que conozcas (puede ser local o internacional). Hacé:</p>
+                            <ul>
+                                <li>Análisis completo de las 5 Fuerzas de Porter</li>
+                                <li>FODA basado en ese análisis</li>
+                                <li>Proponé 1 estrategia para mejorar su posición competitiva</li>
+                            </ul>
+                            <div class="formato-entrega">
+                                <strong>Formato:</strong> Documento Word/PDF o presentación (máx. 5 páginas)
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opción B -->
+                    <div class="actividad-card opcion-b">
+                        <div class="actividad-header">
+                            <div class="opcion-badge">OPCIÓN B</div>
+                            <h3>Infografía comparativa</h3>
+                        </div>
+                        <div class="actividad-body">
+                            <p>Creá una infografía (en Canva, Figma, o lo que prefieras) que compare:</p>
+                            <ul>
+                                <li>2 empresas del mismo rubro (ej: Spotify vs. YouTube Music)</li>
+                                <li>Mostrá las 5 Fuerzas para cada una</li>
+                                <li>Indicá quién tiene ventaja en cada fuerza y por qué</li>
+                            </ul>
+                            <div class="formato-entrega">
+                                <strong>Formato:</strong> Imagen/PDF para compartir
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Opción C -->
+                    <div class="actividad-card opcion-c">
+                        <div class="actividad-header">
+                            <div class="opcion-badge">OPCIÓN C</div>
+                            <h3>Análisis de noticia</h3>
+                        </div>
+                        <div class="actividad-body">
+                            <p>Buscá una noticia reciente de tecnología (última semana/mes) donde una empresa haya:</p>
+                            <ul>
+                                <li>Lanzado un producto nuevo</li>
+                                <li>Comprado otra empresa</li>
+                                <li>Cambiado su estrategia</li>
+                            </ul>
+                            <p><strong>Analizá:</strong></p>
+                            <ul>
+                                <li>¿Qué fuerza(s) de Porter motivó esa decisión?</li>
+                                <li>¿Es una buena estrategia según el análisis? ¿Por qué?</li>
+                            </ul>
+                            <div class="formato-entrega">
+                                <strong>Formato:</strong> Texto (500-700 palabras) + link a la noticia
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Autoevaluación -->
+            <section class="autoevaluacion-section">
+                <h2>📊 AUTOEVALUACIÓN</h2>
+                <p class="intro-auto">¿Cómo voy con esta unidad?</p>
+
+                <div class="auto-opciones">
+                    <div class="auto-opcion azul">
+                        <div class="auto-icon">🔵</div>
+                        <h4>Lo entiendo y puedo explicarlo</h4>
+                        <ul>
+                            <li>Podría explicarle Porter a un compañero</li>
+                            <li>Identifico las 5 fuerzas en casos reales</li>
+                            <li>Sé cómo hacer un FODA completo</li>
+                        </ul>
+                    </div>
+
+                    <div class="auto-opcion amarillo">
+                        <div class="auto-icon">🟡</div>
+                        <h4>Lo entiendo pero me cuesta</h4>
+                        <ul>
+                            <li>Entiendo la teoría, pero aplicarla es difícil</li>
+                            <li>Confundo algunas fuerzas entre sí</li>
+                            <li>FODA me sale incompleto</li>
+                        </ul>
+                    </div>
+
+                    <div class="auto-opcion rojo">
+                        <div class="auto-icon">🔴</div>
+                        <h4>Necesito volver a verlo</h4>
+                        <ul>
+                            <li>No entiendo bien qué es cada fuerza</li>
+                            <li>No veo la conexión Porter-FODA</li>
+                            <li>Me pierdo en los ejemplos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ayuda-box">
+                    <p>💡 Si marcaste 🟡 o 🔴, revisá los bloques 3, 4, 5 y 6. También podés consultar en clase o por el grupo de WhatsApp.</p>
+                </div>
+            </section>
+
+            <!-- Reflexión Metacognitiva -->
+            <section class="reflexion-section">
+                <h2>✍️ REFLEXIÓN METACOGNITIVA</h2>
+                <p class="intro-reflexion">(No se califica, es solo para vos y para mí)</p>
+
+                <div class="pregunta-reflexion">
+                    <h4>1. ¿Qué fue lo más difícil de esta unidad?</h4>
+                    <textarea placeholder="Escribí tu respuesta acá..." rows="4"></textarea>
+                </div>
+
+                <div class="pregunta-reflexion">
+                    <h4>2. ¿Qué tema entendiste mejor y por qué?</h4>
+                    <textarea placeholder="Escribí tu respuesta acá..." rows="4"></textarea>
+                </div>
+
+                <div class="pregunta-reflexion">
+                    <h4>3. Si tuvieras que explicar Porter a alguien que no sabe nada, ¿cómo lo harías?</h4>
+                    <textarea placeholder="Escribí tu respuesta acá..." rows="4"></textarea>
+                </div>
+
+                <button class="btn-guardar-reflexion">💾 Guardar mis reflexiones</button>
+            </section>
+
+            <!-- Meta Final -->
+            <section class="meta-final">
+                <h2>🏁 META FINAL</h2>
+                <div class="checklist-final">
+                    <p><strong>Si completaste todo esto:</strong></p>
+                    <div class="item-final">
+                        <input type="checkbox" id="meta1">
+                        <label for="meta1">✅ Checklist de conceptos ✔️</label>
+                    </div>
+                    <div class="item-final">
+                        <input type="checkbox" id="meta2">
+                        <label for="meta2">✅ Una actividad a elección ✔️</label>
+                    </div>
+                    <div class="item-final">
+                        <input type="checkbox" id="meta3">
+                        <label for="meta3">✅ Autoevaluación ✔️</label>
+                    </div>
+                    <div class="item-final">
+                        <input type="checkbox" id="meta4">
+                        <label for="meta4">✅ Reflexión metacognitiva ✔️</label>
+                    </div>
+
+                    <div class="mensaje-final">
+                        <p>→ <strong>Estás listo/a para rendir esta unidad sin miedo.</strong> 🎉</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Semáforo de Profundidad -->
+            <section class="semaforo-section">
+                <h2>🎯 SEMÁFORO DE PROFUNDIDAD</h2>
+                
+                <div class="semaforo-grid">
+                    <div class="semaforo-card verde">
+                        <h3>🟢 IMPRESCINDIBLE</h3>
+                        <p class="semaforo-desc">(sale seguro en evaluaciones)</p>
+                        <ul>
+                            <li>Las 5 Fuerzas de Porter (qué son, ejemplos)</li>
+                            <li>FODA básico</li>
+                            <li>Niveles jerárquicos (estratégico, táctico, operativo)</li>
+                            <li>Conexión Porter ↔ FODA</li>
+                        </ul>
+                    </div>
+
+                    <div class="semaforo-card amarillo">
+                        <h3>🟡 IMPORTANTE</h3>
+                        <p class="semaforo-desc">(refuerza comprensión)</p>
+                        <ul>
+                            <li>Casos prácticos completos</li>
+                            <li>Análisis de empresas reales</li>
+                            <li>Comparación estructuras tradicionales vs. planas</li>
+                        </ul>
+                    </div>
+
+                    <div class="semaforo-card rojo">
+                        <h3>🔴 PARA PROFUNDIZAR</h3>
+                        <p class="semaforo-desc">(desafío / curiosidad)</p>
+                        <ul>
+                            <li>Estrategias avanzadas</li>
+                            <li>Modelos de negocios disruptivos</li>
+                            <li>Casos de empresas que ignoraron Porter y quebraron</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Info -->
+            <section class="footer-info">
+                <p>📌 <strong>Última actualización:</strong> Enero 2026</p>
+                <p>👩‍🏫 <strong>Profe:</strong> Verónica Vila Bordó</p>
+                <p>¿Dudas? ¿Sugerencias? Hablamos en clase o por el grupo de WhatsApp 📱</p>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="bloque07.html" class="btn-nav btn-prev">
+                    <span>←</span> Anterior: Niveles Jerárquicos
+                </a>
+                <a href="index.html" class="btn-nav btn-next">
+                    Volver al índice de la unidad <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(8);
+            alert('🎉 ¡FELICITACIONES! Completaste toda la Unidad 1. Estás listo/a para la evaluación.');
+        }
+
+        // Guardar reflexiones en localStorage
+        document.querySelector('.btn-guardar-reflexion')?.addEventListener('click', () => {
+            const reflexiones = {
+                dificil: document.querySelectorAll('textarea')[0].value,
+                mejor: document.querySelectorAll('textarea')[1].value,
+                explicar: document.querySelectorAll('textarea')[2].value
+            };
+            localStorage.setItem('unidad1-reflexiones', JSON.stringify(reflexiones));
+            alert('✅ Reflexiones guardadas correctamente');
+        });
+
+        // Cargar reflexiones guardadas
+        window.addEventListener('DOMContentLoaded', () => {
+            const saved = localStorage.getItem('unidad1-reflexiones');
+            if (saved) {
+                const reflexiones = JSON.parse(saved);
+                const textareas = document.querySelectorAll('textarea');
+                textareas[0].value = reflexiones.dificil || '';
+                textareas[1].value = reflexiones.mejor || '';
+                textareas[2].value = reflexiones.explicar || '';
+            }
+        });
+    </script>
+
+    <style>
+        .intro-checklist {
+            text-align: center;
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .concepts-checklist-big {
+            display: grid;
+            gap: 1rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .concept-item-big {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem;
+            background: white;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .concept-item-big:hover {
+            border-color: var(--primary-blue);
+            background: rgba(37, 99, 235, 0.03);
+        }
+
+        .concept-item-big input[type="checkbox"] {
+            appearance: none;
+            width: 28px;
+            height: 28px;
+            border: 2px solid var(--primary-blue);
+            border-radius: 6px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .concept-item-big input[type="checkbox"]:checked {
+            background: var(--primary-blue);
+        }
+
+        .concept-item-big input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            font-size: 1.125rem;
+        }
+
+        .concept-item-big input[type="checkbox"]:checked ~ .concept-text {
+            text-decoration: line-through;
+            color: var(--text-light);
+        }
+
+        .errores-section {
+            margin: 4rem 0;
+        }
+
+        .error-card {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid var(--accent-orange);
+        }
+
+        .error-num {
+            flex-shrink: 0;
+            font-size: 2rem;
+        }
+
+        .error-content h4 {
+            margin: 0 0 0.75rem 0;
+            color: var(--accent-orange);
+        }
+
+        .error-content p {
+            margin: 0.5rem 0;
+        }
+
+        .ejemplo-error {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.75rem;
+        }
+
+        .actividades-section {
+            margin: 4rem 0;
+        }
+
+        .intro-actividades {
+            text-align: center;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        .actividades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .actividad-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            border: 3px solid;
+            transition: all 0.3s ease;
+        }
+
+        .actividad-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .actividad-card.opcion-a { border-color: #2563eb; }
+        .actividad-card.opcion-b { border-color: #8b5cf6; }
+        .actividad-card.opcion-c { border-color: #10b981; }
+
+        .actividad-header {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .actividad-card.opcion-a .actividad-header {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
+        }
+
+        .actividad-card.opcion-b .actividad-header {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.1));
+        }
+
+        .actividad-card.opcion-c .actividad-header {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+        }
+
+        .opcion-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: var(--radius-xl);
+            font-weight: 700;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .actividad-card.opcion-b .opcion-badge {
+            background: var(--accent-purple);
+        }
+
+        .actividad-card.opcion-c .opcion-badge {
+            background: var(--success);
+        }
+
+        .actividad-header h3 {
+            margin: 0;
+            color: var(--text-primary);
+        }
+
+        .actividad-body {
+            padding: 1.5rem;
+        }
+
+        .actividad-body ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .actividad-body li {
+            margin-bottom: 0.5rem;
+        }
+
+        .formato-entrega {
+            background: rgba(37, 99, 235, 0.05);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .autoevaluacion-section {
+            margin: 4rem 0;
+        }
+
+        .intro-auto {
+            text-align: center;
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .auto-opciones {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .auto-opcion {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid;
+        }
+
+        .auto-opcion.azul {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(30, 64, 175, 0.05));
+            border-left-color: var(--primary-blue);
+        }
+
+        .auto-opcion.amarillo {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+            border-left-color: var(--warning);
+        }
+
+        .auto-opcion.rojo {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+            border-left-color: var(--danger);
+        }
+
+        .auto-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .auto-opcion h4 {
+            margin: 0 0 1rem 0;
+            font-size: 1.25rem;
+        }
+
+        .auto-opcion ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .ayuda-box {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 2rem;
+            border-left: 4px solid var(--accent-orange);
+        }
+
+        .reflexion-section {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05), rgba(124, 58, 237, 0.05));
+            border-radius: var(--radius-xl);
+        }
+
+        .intro-reflexion {
+            text-align: center;
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .pregunta-reflexion {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .pregunta-reflexion h4 {
+            margin: 0 0 1rem 0;
+            color: var(--accent-purple);
+        }
+
+        .pregunta-reflexion textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid rgba(139, 92, 246, 0.2);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            resize: vertical;
+        }
+
+        .pregunta-reflexion textarea:focus {
+            outline: none;
+            border-color: var(--accent-purple);
+        }
+
+        .btn-guardar-reflexion {
+            display: block;
+            margin: 2rem auto 0;
+            padding: 1rem 2rem;
+            background: var(--accent-purple);
+            color: white;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 1.125rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-guardar-reflexion:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .meta-final {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+            border-radius: var(--radius-xl);
+            border: 3px solid var(--success);
+        }
+
+        .checklist-final {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .checklist-final > p {
+            text-align: center;
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .item-final {
+            background: white;
+            padding: 1.25rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .item-final input[type="checkbox"] {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+
+        .item-final label {
+            font-size: 1.125rem;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        .mensaje-final {
+            background: var(--success);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .mensaje-final p {
+            margin: 0;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .semaforo-section {
+            margin: 4rem 0;
+        }
+
+        .semaforo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .semaforo-card {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border-top: 6px solid;
+        }
+
+        .semaforo-card.verde {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
+            border-top-color: var(--success);
+        }
+
+        .semaforo-card.amarillo {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+            border-top-color: var(--warning);
+        }
+
+        .semaforo-card.rojo {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+            border-top-color: var(--danger);
+        }
+
+        .semaforo-card h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .semaforo-desc {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-info {
+            text-align: center;
+            margin: 4rem 0 2rem;
+            padding: 2rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .footer-info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .actividades-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .semaforo-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 3: Modelo de Michael Porter - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 3</span>
+                <span class="separator">•</span>
+                <span class="block-name">Modelo de Michael Porter</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🔴 Profundizar • ⏱️ 45 minutos</div>
+            <h1 class="block-hero-title">🎯 Modelo de Michael Porter</h1>
+            <p class="block-hero-subtitle">¿Quién es Porter? Las 5 Fuerzas de la competencia</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+
+            <!-- Quién es Porter -->
+            <section>
+                <h2>🔴 ¿Quién es Michael Porter y por qué importa?</h2>
+                
+                <div class="porter-intro">
+                    <div class="porter-photo">
+                        <div class="photo-placeholder">
+                            <span class="photo-icon">👨‍🏫</span>
+                        </div>
+                        <p class="photo-caption">Michael Porter<br>Profesor de Harvard</p>
+                    </div>
+                    <div class="porter-bio">
+                        <p><strong>Michael Porter</strong> es un economista y profesor de Harvard que en <strong>1979 revolucionó</strong> cómo las empresas analizan la competencia.</p>
+                        
+                        <div class="big-idea">
+                            <h3>Su gran idea:</h3>
+                            <p>No solo importa tu <strong>competencia directa</strong>. Hay <strong>5 fuerzas</strong> que determinan si una industria es atractiva (rentable) o no.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-it">
+                    <h3>¿Por qué lo usamos en IT?</h3>
+                    <p>Porque el mundo tech es <strong>ultra competitivo</strong> y cambia todo el tiempo. Porter te da un marco para analizar:</p>
+                    <ul class="why-list">
+                        <li>
+                            <span class="why-icon">🤔</span>
+                            <div>
+                                <strong>¿Conviene entrar a este mercado?</strong>
+                                <p>Antes de desarrollar una app o servicio, evaluás si vale la pena</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="why-icon">🛡️</span>
+                            <div>
+                                <strong>¿Cómo nos defendemos de la competencia?</strong>
+                                <p>Identificás amenazas y oportunidades</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="why-icon">⚠️</span>
+                            <div>
+                                <strong>¿Qué riesgos tenemos?</strong>
+                                <p>Ves venir los peligros antes de que te destruyan</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Las 5 Fuerzas -->
+            <section>
+                <h2>🔴 LAS 5 FUERZAS DE PORTER</h2>
+                
+                <div class="intro-fuerzas">
+                    <p>Imaginá que <strong>tu empresa es el centro</strong> y alrededor hay <strong>5 fuerzas que ejercen presión:</strong></p>
+                </div>
+
+                <div class="diagram-porter">
+                    <div class="diagram-box">
+                        <pre class="ascii-diagram">
+           ┌─────────────────────┐
+           │ <strong>AMENAZA DE NUEVOS</strong>   │
+           │   <strong>COMPETIDORES</strong>      │
+           └──────────┬──────────┘
+                      │
+                      ▼
+┌──────────────┐   ┌─────────────────┐   ┌──────────────┐
+│ <strong>PODER DE</strong>     │◄──┤   <strong>TU EMPRESA</strong>    │──►│ <strong>PODER DE</strong>     │
+│ <strong>PROVEEDORES</strong>  │   │   <strong>(INDUSTRIA)</strong>   │   │ <strong>CLIENTES</strong>     │
+└──────────────┘   └─────────────────┘   └──────────────┘
+                      ▲
+                      │
+           ┌──────────┴──────────┐
+           │ <strong>AMENAZA DE</strong>          │
+           │ <strong>PRODUCTOS SUSTITUTOS</strong>│
+           └─────────────────────┘
+                      ▲
+                      │
+           ┌──────────┴──────────┐
+           │ <strong>RIVALIDAD ENTRE</strong>     │
+           │ <strong>COMPETIDORES</strong>        │
+           │ <strong>EXISTENTES</strong>          │
+           └─────────────────────┘
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="fuerzas-explicacion">
+                    <h3>Las 5 Fuerzas explicadas:</h3>
+                    <div class="fuerzas-grid">
+                        <div class="fuerza-card f1">
+                            <div class="fuerza-num">1</div>
+                            <h4>Rivalidad entre competidores existentes</h4>
+                            <p>¿Qué tan intensa es la pelea por clientes entre las empresas que ya están en el mercado?</p>
+                            <div class="ejemplo-mini">
+                                <strong>Ejemplo:</strong> Spotify vs Apple Music vs YouTube Music
+                            </div>
+                        </div>
+
+                        <div class="fuerza-card f2">
+                            <div class="fuerza-num">2</div>
+                            <h4>Amenaza de nuevos competidores</h4>
+                            <p>¿Qué tan fácil es que nuevas empresas entren a competir en tu mercado?</p>
+                            <div class="ejemplo-mini">
+                                <strong>Ejemplo:</strong> Apps móviles (fácil entrar) vs Sistemas Operativos (difícil entrar)
+                            </div>
+                        </div>
+
+                        <div class="fuerza-card f3">
+                            <div class="fuerza-num">3</div>
+                            <h4>Amenaza de productos sustitutos</h4>
+                            <p>¿Existen productos diferentes que resuelven la misma necesidad?</p>
+                            <div class="ejemplo-mini">
+                                <strong>Ejemplo:</strong> Zoom (videollamadas) sustituyó parcialmente los viajes de negocios
+                            </div>
+                        </div>
+
+                        <div class="fuerza-card f4">
+                            <div class="fuerza-num">4</div>
+                            <h4>Poder de negociación de proveedores</h4>
+                            <p>¿Qué tanto control tienen tus proveedores sobre precios y condiciones?</p>
+                            <div class="ejemplo-mini">
+                                <strong>Ejemplo:</strong> NVIDIA tiene alto poder con sus GPUs para IA
+                            </div>
+                        </div>
+
+                        <div class="fuerza-card f5">
+                            <div class="fuerza-num">5</div>
+                            <h4>Poder de negociación de clientes</h4>
+                            <p>¿Qué tanto pueden tus clientes exigir mejores precios o condiciones?</p>
+                            <div class="ejemplo-mini">
+                                <strong>Ejemplo:</strong> Apple tiene bajo poder de clientes por su ecosistema cerrado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cómo usar el modelo -->
+            <section>
+                <h2>📊 ¿Cómo usar el Modelo de Porter?</h2>
+                
+                <div class="como-usar">
+                    <div class="paso-usar">
+                        <div class="paso-num">1</div>
+                        <div class="paso-content">
+                            <h4>Analizás cada una de las 5 fuerzas</h4>
+                            <p>Para cada fuerza, te preguntás: ¿Es alta, media o baja en mi industria?</p>
+                        </div>
+                    </div>
+
+                    <div class="paso-usar">
+                        <div class="paso-num">2</div>
+                        <div class="paso-content">
+                            <h4>Identificás oportunidades y amenazas</h4>
+                            <p>Si una fuerza es alta = posible amenaza. Si es baja = posible oportunidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="paso-usar">
+                        <div class="paso-num">3</div>
+                        <div class="paso-content">
+                            <h4>Diseñás tu estrategia</h4>
+                            <p>Basándote en el análisis, decidís cómo competir, diferenciarte o defenderte.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion-box">
+                    <h4>💡 Conclusión:</h4>
+                    <p>Porter no es solo "teoría de libro". Es una herramienta que <strong>empresas reales usan todos los días</strong> para tomar decisiones estratégicas de millones de dólares.</p>
+                    <p>En los próximos bloques vamos a profundizar en cada una de las 5 fuerzas con ejemplos tech concretos.</p>
+                </div>
+            </section>
+
+            <!-- Key Takeaways -->
+            <section class="takeaways">
+                <h2>🎯 Puntos Clave de este Bloque</h2>
+                <div class="takeaway-list">
+                    <div class="takeaway-item">
+                        <span class="takeaway-check">✓</span>
+                        <p>Michael Porter creó un modelo en 1979 que revolucionó el análisis competitivo</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="takeaway-check">✓</span>
+                        <p>No solo importa la competencia directa: hay 5 fuerzas que afectan a tu negocio</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="takeaway-check">✓</span>
+                        <p>El modelo se aplica especialmente bien en industrias tech y startups</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="takeaway-check">✓</span>
+                        <p>Las 5 fuerzas son: Rivalidad, Nuevos Competidores, Sustitutos, Proveedores, Clientes</p>
+                    </div>
+                    <div class="takeaway-item">
+                        <span class="takeaway-check">✓</span>
+                        <p>Este análisis te ayuda a identificar oportunidades y amenazas antes que tu competencia</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="bloque02.html" class="btn-nav btn-prev">
+                    <span>←</span> Anterior: Repaso Express
+                </a>
+                <a href="bloque04.html" class="btn-nav btn-next">
+                    Siguiente: Fuerzas 1 y 2 <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(3);
+            alert('✅ ¡Bloque 3 completado! Ahora profundizamos en cada fuerza.');
+        }
+    </script>
+
+    <style>
+        .porter-intro {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05) 0%, rgba(30, 64, 175, 0.05) 100%);
+            border-radius: var(--radius-lg);
+        }
+
+        .porter-photo {
+            text-align: center;
+        }
+
+        .photo-placeholder {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .photo-icon {
+            font-size: 4rem;
+        }
+
+        .photo-caption {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        .porter-bio p {
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .big-idea {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 6px solid var(--primary-blue);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .big-idea h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+            font-size: 1.25rem;
+        }
+
+        .big-idea p {
+            margin: 0;
+            font-size: 1.125rem;
+        }
+
+        .why-it {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 3rem 0;
+            box-shadow: var(--shadow-md);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+        }
+
+        .why-it h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .why-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.5rem 0 0 0;
+        }
+
+        .why-list li {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            background: rgba(37, 99, 235, 0.03);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .why-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .why-list strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 0.25rem;
+            font-size: 1.125rem;
+        }
+
+        .why-list p {
+            margin: 0;
+        }
+
+        .intro-fuerzas {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(217, 119, 6, 0.1) 100%);
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+
+        .intro-fuerzas p {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+
+        .diagram-porter {
+            margin: 3rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .diagram-box {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            border: 3px solid var(--primary-blue);
+            overflow-x: auto;
+        }
+
+        .ascii-diagram {
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            margin: 0;
+            white-space: pre;
+        }
+
+        .ascii-diagram strong {
+            color: var(--primary-blue);
+            font-weight: 900;
+        }
+
+        .fuerzas-explicacion {
+            margin: 3rem 0;
+        }
+
+        .fuerzas-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .fuerza-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border-left: 6px solid;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .fuerza-card:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .fuerza-card.f1 { border-left-color: #ef4444; }
+        .fuerza-card.f2 { border-left-color: #2563eb; }
+        .fuerza-card.f3 { border-left-color: #8b5cf6; }
+        .fuerza-card.f4 { border-left-color: #f59e0b; }
+        .fuerza-card.f5 { border-left-color: #10b981; }
+
+        .fuerza-num {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            box-shadow: var(--shadow-md);
+        }
+
+        .fuerza-card h4 {
+            margin: 0 0 1rem 0;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            padding-right: 60px;
+        }
+
+        .fuerza-card p {
+            margin: 0 0 1rem 0;
+            color: var(--text-secondary);
+        }
+
+        .ejemplo-mini {
+            background: rgba(37, 99, 235, 0.05);
+            padding: 0.75rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.95rem;
+        }
+
+        .ejemplo-mini strong {
+            color: var(--primary-blue);
+        }
+
+        .como-usar {
+            margin: 2rem 0;
+        }
+
+        .paso-usar {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            padding: 1.5rem;
+            background: white;
+            border-radius: var(--radius-lg);
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border: 2px solid rgba(37, 99, 235, 0.1);
+        }
+
+        .paso-num {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .paso-content h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-blue);
+        }
+
+        .paso-content p {
+            margin: 0;
+        }
+
+        .conclusion-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 3rem 0;
+            border: 2px solid var(--success);
+        }
+
+        .conclusion-box h4 {
+            margin-top: 0;
+            color: var(--success);
+        }
+
+        .conclusion-box p {
+            margin: 0.75rem 0;
+            font-size: 1.125rem;
+        }
+
+        .takeaways {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(124, 58, 237, 0.05) 100%);
+            border-radius: var(--radius-xl);
+        }
+
+        .takeaways h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+
+        .takeaway-list {
+            margin-top: 2rem;
+        }
+
+        .takeaway-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1.25rem;
+            background: white;
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .takeaway-check {
+            flex-shrink: 0;
+            width: 30px;
+            height: 30px;
+            background: var(--success);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1.125rem;
+        }
+
+        .takeaway-item p {
+            margin: 0;
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .porter-intro {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .diagram-box {
+                padding: 1rem;
+            }
+
+            .ascii-diagram {
+                font-size: 0.65rem;
+            }
+
+            .fuerza-card h4 {
+                padding-right: 0;
+            }
+
+            .fuerza-num {
+                position: static;
+                margin: 0 auto 1rem;
+            }
+        }
+    </style>
+</body>
+</html>

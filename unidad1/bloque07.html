@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 7: Niveles Jerárquicos - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 7</span>
+                <span class="separator">•</span>
+                <span class="block-name">Niveles Jerárquicos</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟢 Imprescindible • ⏱️ 35 minutos</div>
+            <h1 class="block-hero-title">🏢 Niveles Jerárquicos</h1>
+            <p class="block-hero-subtitle">Estratégico, Táctico, Operativo • Estructuras planas vs tradicionales</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+
+            <!-- Qué son -->
+            <section>
+                <h2>🔴 ¿Qué son los niveles jerárquicos?</h2>
+                
+                <div class="concept-box">
+                    <p>Los niveles jerárquicos son las <strong>capas de autoridad y responsabilidad</strong> dentro de una organización.</p>
+                    <p>Básicamente: <strong>quién manda a quién y quién decide qué</strong>.</p>
+                </div>
+            </section>
+
+            <!-- Pirámide -->
+            <section>
+                <h2>🔴 Pirámide organizacional clásica</h2>
+                
+                <div class="piramide-box">
+                    <pre class="piramide-diagram">
+                ┌─────────────────┐
+                │  ALTA DIRECCIÓN │ ← Estratégico
+                │  (CEO, Gerentes)│
+                └────────┬────────┘
+                         │
+                ┌────────┴────────┐
+                │  MANDOS MEDIOS  │ ← Táctico
+                │ (Jefes de área) │
+                └────────┬────────┘
+                         │
+                ┌────────┴────────┐
+                │ NIVEL OPERATIVO │ ← Operativo
+                │  (Empleados)    │
+                └─────────────────┘
+                    </pre>
+                </div>
+            </section>
+
+            <!-- Los 3 niveles -->
+            <section>
+                <h2>🔴 Los 3 niveles y qué hacen</h2>
+                
+                <!-- NIVEL ESTRATÉGICO -->
+                <div class="nivel-card estrategico">
+                    <div class="nivel-header">
+                        <div class="nivel-num">1</div>
+                        <h3>NIVEL ESTRATÉGICO (Alta Dirección)</h3>
+                    </div>
+                    <div class="nivel-body">
+                        <div class="nivel-section">
+                            <h4>Quiénes:</h4>
+                            <p>CEO, Directores, Gerentes Generales</p>
+                        </div>
+
+                        <div class="nivel-section">
+                            <h4>¿Qué hacen?</h4>
+                            <ul>
+                                <li>Definen la visión, misión, objetivos de largo plazo</li>
+                                <li>Deciden estrategias (Porter, FODA, expansión, productos nuevos)</li>
+                                <li>Asignan presupuestos grandes</li>
+                                <li>Representan a la empresa ante inversores, medios, gobierno</li>
+                            </ul>
+                        </div>
+
+                        <div class="ejemplo-nivel">
+                            <h4>Ejemplo IT:</h4>
+                            <p><strong>Satya Nadella (CEO de Microsoft)</strong> decide: "Vamos a apostar por la nube e IA"</p>
+                            <p class="nota-ejemplo">No programa, no vende, no hace soporte. Decide el rumbo.</p>
+                        </div>
+
+                        <div class="preguntas-nivel">
+                            <h4>Preguntas que se hacen:</h4>
+                            <ul>
+                                <li>¿En qué mercados entramos?</li>
+                                <li>¿Compramos esa empresa o desarrollamos nosotros?</li>
+                                <li>¿Cómo nos diferenciamos de la competencia?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIVEL TÁCTICO -->
+                <div class="nivel-card tactico">
+                    <div class="nivel-header">
+                        <div class="nivel-num">2</div>
+                        <h3>NIVEL TÁCTICO (Mandos Medios)</h3>
+                    </div>
+                    <div class="nivel-body">
+                        <div class="nivel-section">
+                            <h4>Quiénes:</h4>
+                            <p>Jefes de área, Team Leads, Product Managers, Coordinadores</p>
+                        </div>
+
+                        <div class="nivel-section">
+                            <h4>¿Qué hacen?</h4>
+                            <ul>
+                                <li>Traducen la estrategia en planes de acción concretos</li>
+                                <li>Coordinan equipos y recursos</li>
+                                <li>Supervisan que se cumplan objetivos</li>
+                                <li>Reportan a la alta dirección</li>
+                            </ul>
+                        </div>
+
+                        <div class="ejemplo-nivel">
+                            <h4>Ejemplo IT:</h4>
+                            <p><strong>Tech Lead</strong> decide: "Para cumplir el objetivo de lanzar la app en 3 meses, necesitamos 5 desarrolladores, 2 QA, dividimos en sprints de 2 semanas"</p>
+                            <p><strong>Product Manager</strong> define: "Las features prioritarias son login, búsqueda, checkout. Las demás pueden esperar."</p>
+                        </div>
+
+                        <div class="preguntas-nivel">
+                            <h4>Preguntas que se hacen:</h4>
+                            <ul>
+                                <li>¿Cómo organizamos el trabajo?</li>
+                                <li>¿Qué recursos necesitamos?</li>
+                                <li>¿Quién hace qué y para cuándo?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NIVEL OPERATIVO -->
+                <div class="nivel-card operativo">
+                    <div class="nivel-header">
+                        <div class="nivel-num">3</div>
+                        <h3>NIVEL OPERATIVO (Base de la pirámide)</h3>
+                    </div>
+                    <div class="nivel-body">
+                        <div class="nivel-section">
+                            <h4>Quiénes:</h4>
+                            <p>Empleados, técnicos, operarios, vendedores, desarrolladores, diseñadores</p>
+                        </div>
+
+                        <div class="nivel-section">
+                            <h4>¿Qué hacen?</h4>
+                            <ul>
+                                <li>Ejecutan las tareas diarias</li>
+                                <li>Producen el producto o servicio</li>
+                                <li>Atienden clientes, desarrollan software, procesan datos, etc.</li>
+                            </ul>
+                        </div>
+
+                        <div class="ejemplo-nivel">
+                            <h4>Ejemplo IT:</h4>
+                            <p><strong>Desarrollador Junior:</strong> Programa las funcionalidades asignadas en el sprint</p>
+                            <p><strong>QA Tester:</strong> Prueba que el código funcione correctamente</p>
+                            <p><strong>Soporte técnico:</strong> Resuelve problemas de usuarios</p>
+                        </div>
+
+                        <div class="preguntas-nivel">
+                            <h4>Preguntas que se hacen:</h4>
+                            <ul>
+                                <li>¿Cómo resuelvo este bug?</li>
+                                <li>¿Qué tarea tengo que terminar hoy?</li>
+                                <li>¿Cómo mejoro este código?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparación Visual -->
+            <section>
+                <h2>🔴 Comparación visual</h2>
+                
+                <div class="comparacion-tabla">
+                    <div class="tabla-row header">
+                        <div class="col"></div>
+                        <div class="col">Estratégico</div>
+                        <div class="col">Táctico</div>
+                        <div class="col">Operativo</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="col label">Horizonte temporal</div>
+                        <div class="col">Largo plazo (años)</div>
+                        <div class="col">Mediano plazo (meses)</div>
+                        <div class="col">Corto plazo (días/semanas)</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="col label">Tipo de decisión</div>
+                        <div class="col">¿Hacia dónde vamos?</div>
+                        <div class="col">¿Cómo llegamos?</div>
+                        <div class="col">¿Qué hago hoy?</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="col label">Alcance</div>
+                        <div class="col">Toda la organización</div>
+                        <div class="col">Un área/equipo</div>
+                        <div class="col">Tareas individuales</div>
+                    </div>
+                    <div class="tabla-row">
+                        <div class="col label">Ejemplo en IT</div>
+                        <div class="col">CEO de Netflix decide apostar por contenido propio</div>
+                        <div class="col">Director de Contenido planifica 20 series para el año</div>
+                        <div class="col">Productor graba episodio hoy</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estructuras modernas -->
+            <section>
+                <h2>🔴 Tendencias modernas: Estructuras más planas</h2>
+                
+                <div class="tendencias-intro">
+                    <div class="tendencia-item">
+                        <strong>Tradicionalmente:</strong>
+                        <p>Muchas capas jerárquicas (pirámide alta)</p>
+                    </div>
+                    <div class="arrow-trend">→</div>
+                    <div class="tendencia-item">
+                        <strong>Hoy en día (especialmente en IT):</strong>
+                        <p>Estructuras más horizontales o planas</p>
+                    </div>
+                </div>
+
+                <div class="que-significa">
+                    <h3>¿Qué significa?</h3>
+                    <ul>
+                        <li>Menos niveles entre el CEO y los empleados</li>
+                        <li>Más autonomía a los equipos</li>
+                        <li>Decisiones más rápidas</li>
+                    </ul>
+                    <div class="ejemplo-spotify">
+                        <strong>Ejemplo:</strong> Spotify usa "squads" (equipos autónomos), cada uno con su mini-CEO
+                    </div>
+                </div>
+
+                <div class="ventajas-desventajas">
+                    <div class="vd-col ventajas">
+                        <h4>✅ Ventajas</h4>
+                        <ul>
+                            <li>Más agilidad</li>
+                            <li>Menos burocracia</li>
+                            <li>Empleados más motivados (sienten que tienen voz)</li>
+                        </ul>
+                    </div>
+                    <div class="vd-col desventajas">
+                        <h4>❌ Desventajas</h4>
+                        <ul>
+                            <li>Puede haber confusión de roles</li>
+                            <li>Requiere equipos muy maduros</li>
+                            <li>A veces falta coordinación</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Caso: Startup vs Tradicional -->
+            <section>
+                <h2>🔴 Caso: Startup vs. Empresa tradicional</h2>
+                
+                <div class="caso-comparacion">
+                    <div class="caso-lado startup">
+                        <h4>STARTUP de 20 personas:</h4>
+                        <pre class="org-diagram">
+CEO
+ ├── CTO (Tech Lead)
+ │    └── 5 Developers + 2 QA
+ ├── CMO (Marketing)
+ │    └── 3 Marketing + 1 Diseñador
+ └── COO (Operaciones)
+      └── 5 Ventas + 2 Soporte
+                        </pre>
+                        <ul class="caracteristicas">
+                            <li>Solo 2-3 niveles</li>
+                            <li>Comunicación directa</li>
+                            <li>Decisiones rápidas</li>
+                        </ul>
+                    </div>
+
+                    <div class="caso-lado tradicional">
+                        <h4>EMPRESA TRADICIONAL de 500 personas:</h4>
+                        <pre class="org-diagram">
+CEO
+ ├── Directorio
+ │    ├── Gerentes Generales
+ │    │    ├── Gerentes de área
+ │    │    │    ├── Jefes de departamento
+ │    │    │    │    ├── Supervisores
+ │    │    │    │    │    └── Empleados
+                        </pre>
+                        <ul class="caracteristicas">
+                            <li>5-6 niveles</li>
+                            <li>Procesos más formales</li>
+                            <li>Decisiones más lentas pero más estructuradas</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ¿Lo sabías? Valve -->
+            <section class="sabias-section">
+                <h2>💡 ¿SABÍAS QUE...?</h2>
+                <div class="sabias-box">
+                    <h3>Valve (creadores de Steam) no tiene jefes</h3>
+                    <p>Valve Corporation es famosa por su estructura organizacional plana. <strong>Literalmente, no hay managers</strong>. Los empleados eligen en qué proyectos trabajar, forman equipos libremente, y deciden colectivamente.</p>
+                    
+                    <div class="funciona-box">
+                        <h4>¿Funciona?</h4>
+                        <p>Para ellos sí (generan miles de millones). Pero requiere:</p>
+                        <ul>
+                            <li>Contratar solo gente muy autodisciplinada</li>
+                            <li>Cultura fuerte de responsabilidad</li>
+                            <li>No es replicable en cualquier empresa</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="bloque06.html" class="btn-nav btn-prev">
+                    <span>←</span> Anterior: Porter + FODA
+                </a>
+                <a href="bloque08.html" class="btn-nav btn-next">
+                    Siguiente: Actividades y Evaluación <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(7);
+            alert('✅ ¡Bloque 7 completado! Ya entendés las estructuras organizacionales.');
+        }
+    </script>
+
+    <style>
+        .piramide-box {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .piramide-diagram {
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: var(--text-primary);
+            margin: 0;
+            white-space: pre;
+        }
+
+        .nivel-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            margin: 2rem 0;
+            overflow: hidden;
+            border: 3px solid;
+        }
+
+        .nivel-card.estrategico { border-color: #2563eb; }
+        .nivel-card.tactico { border-color: #8b5cf6; }
+        .nivel-card.operativo { border-color: #10b981; }
+
+        .nivel-header {
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nivel-card.estrategico .nivel-header {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1));
+        }
+
+        .nivel-card.tactico .nivel-header {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.1));
+        }
+
+        .nivel-card.operativo .nivel-header {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+        }
+
+        .nivel-num {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .nivel-header h3 {
+            margin: 0;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+        }
+
+        .nivel-body {
+            padding: 2rem;
+        }
+
+        .nivel-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .nivel-section h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--primary-blue);
+        }
+
+        .nivel-section ul {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .nivel-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .ejemplo-nivel {
+            background: rgba(37, 99, 235, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 1.5rem 0;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .ejemplo-nivel h4 {
+            margin-top: 0;
+        }
+
+        .nota-ejemplo {
+            font-style: italic;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .preguntas-nivel {
+            background: rgba(139, 92, 246, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .preguntas-nivel h4 {
+            margin-top: 0;
+            color: var(--accent-purple);
+        }
+
+        .preguntas-nivel ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.5rem;
+        }
+
+        .comparacion-tabla {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .tabla-row {
+            display: grid;
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .tabla-row.header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-purple));
+            color: white;
+        }
+
+        .tabla-row.header .col {
+            font-weight: 700;
+        }
+
+        .tabla-row:not(.header) {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .tabla-row:last-child {
+            border-bottom: none;
+        }
+
+        .col {
+            padding: 1rem;
+        }
+
+        .col.label {
+            font-weight: 600;
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        .tendencias-intro {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .tendencia-item {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tendencia-item strong {
+            display: block;
+            color: var(--primary-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .arrow-trend {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+
+        .que-significa {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(30, 64, 175, 0.05));
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+
+        .ejemplo-spotify {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .ventajas-desventajas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .vd-col {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .vd-col.ventajas {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05));
+            border: 2px solid var(--success);
+        }
+
+        .vd-col.desventajas {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05));
+            border: 2px solid var(--danger);
+        }
+
+        .vd-col h4 {
+            margin-top: 0;
+        }
+
+        .caso-comparacion {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .caso-lado {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .caso-lado h4 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .org-diagram {
+            font-family: 'Courier New', monospace;
+            font-size: 0.75rem;
+            line-height: 1.6;
+            background: rgba(37, 99, 235, 0.03);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            overflow-x: auto;
+        }
+
+        .caracteristicas {
+            margin-top: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .sabias-section {
+            margin: 4rem 0;
+        }
+
+        .sabias-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.1));
+            padding: 2.5rem;
+            border-radius: var(--radius-xl);
+            border: 3px solid var(--accent-purple);
+        }
+
+        .sabias-box h3 {
+            margin-top: 0;
+            color: var(--accent-purple);
+            font-size: 1.5rem;
+        }
+
+        .funciona-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1.5rem;
+        }
+
+        .funciona-box h4 {
+            margin-top: 0;
+            color: var(--accent-purple);
+        }
+
+        @media (max-width: 768px) {
+            .tabla-row {
+                grid-template-columns: 1fr;
+            }
+
+            .tendencias-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .arrow-trend {
+                transform: rotate(90deg);
+            }
+
+            .ventajas-desventajas,
+            .caso-comparacion {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 6: Aplicando Porter + FODA - Unidad 1</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="unidad1-style.css">
+    <link rel="stylesheet" href="bloque-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="block-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-back">
+                <span class="back-arrow">←</span>
+                Volver a Unidad 1
+            </a>
+            <div class="block-nav-title">
+                <span class="block-num">Bloque 6</span>
+                <span class="separator">•</span>
+                <span class="block-name">Aplicando Porter + FODA</span>
+            </div>
+            <button class="btn-complete" onclick="markAsComplete()">
+                ✓ Marcar como completado
+            </button>
+        </div>
+    </nav>
+
+    <!-- Block Hero -->
+    <section class="block-hero">
+        <div class="block-hero-content">
+            <div class="block-badge">🟡 Importante • ⏱️ 60 minutos</div>
+            <h1 class="block-hero-title">🎯 Aplicando Porter + FODA</h1>
+            <p class="block-hero-subtitle">Caso práctico completo: Startup de delivery en Venado Tuerto</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <article class="block-content">
+
+            <!-- ¿Lo sabías? WhatsApp -->
+            <section class="sabias-section">
+                <h2>💡 ¿SABÍAS QUE...?</h2>
+                <div class="sabias-box">
+                    <h3>WhatsApp usó Porter para decidir su estrategia</h3>
+                    <div class="sabias-content">
+                        <p>Cuando Facebook ofreció comprar WhatsApp por <strong>$19,000 millones</strong>, muchos pensaron que era una locura. Pero Zuckerberg analizó las 5 fuerzas:</p>
+                        
+                        <div class="fuerzas-whatsapp">
+                            <div class="fuerza-w">
+                                <span class="fw-num">1</span>
+                                <strong>Rivalidad:</strong> Alta (Telegram, WeChat, Line, etc.)
+                            </div>
+                            <div class="fuerza-w">
+                                <span class="fw-num">2</span>
+                                <strong>Nuevos competidores:</strong> Fácil que aparezcan
+                            </div>
+                            <div class="fuerza-w">
+                                <span class="fw-num">3</span>
+                                <strong>Sustitutos:</strong> SMS, redes sociales, email
+                            </div>
+                            <div class="fuerza-w">
+                                <span class="fw-num">4</span>
+                                <strong>Poder de proveedores:</strong> Bajo (infraestructura tech)
+                            </div>
+                            <div class="fuerza-w">
+                                <span class="fw-num">5</span>
+                                <strong>Poder de clientes:</strong> Alto (pueden cambiar gratis)
+                            </div>
+                        </div>
+
+                        <div class="conclusion-whatsapp">
+                            <strong>Conclusión de Facebook:</strong>
+                            <p>"Si no compramos WhatsApp, puede ser nuestro mayor competidor o alguien más lo va a comprar."</p>
+                        </div>
+
+                        <div class="resultado-whatsapp">
+                            <strong>Resultado:</strong> WhatsApp tiene 2,000 millones de usuarios y Facebook/Meta domina la mensajería mundial.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cómo Porter mejora FODA -->
+            <section>
+                <h2>🔴 Cómo Porter mejora tu análisis FODA</h2>
+                
+                <div class="antes-despues">
+                    <div class="antes-box">
+                        <h4>❌ Antes (FODA intuitivo):</h4>
+                        <p>"¿Qué amenazas hay?... ehh... la competencia?"</p>
+                        <p class="problema">Muy genérico, poco útil para estrategia</p>
+                    </div>
+                    
+                    <div class="arrow-transform">→</div>
+
+                    <div class="despues-box">
+                        <h4>✅ Ahora con Porter (FODA sistemático):</h4>
+                        <p>"Analizo las 5 fuerzas y uso eso para alimentar mi FODA"</p>
+                        <p class="beneficio">Profesional, preciso, accionable</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Conexión Porter FODA -->
+            <section>
+                <h2>🔴 CONEXIÓN PORTER ↔ FODA</h2>
+                
+                <div class="tabla-conexion">
+                    <div class="conexion-row header">
+                        <div class="col-porter"><strong>Fuerza de Porter</strong></div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda"><strong>Se refleja en FODA como:</strong></div>
+                    </div>
+
+                    <div class="conexion-row">
+                        <div class="col-porter">
+                            <span class="badge-fuerza f1">Rivalidad alta</span>
+                        </div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda">
+                            <span class="badge-foda amenaza">AMENAZA</span>
+                            <p>Competencia intensa puede bajar precios/márgenes</p>
+                        </div>
+                    </div>
+
+                    <div class="conexion-row">
+                        <div class="col-porter">
+                            <span class="badge-fuerza f2">Barreras de entrada bajas</span>
+                        </div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda">
+                            <span class="badge-foda amenaza">AMENAZA</span>
+                            <p>Pueden entrar nuevos competidores fácilmente</p>
+                        </div>
+                    </div>
+
+                    <div class="conexion-row">
+                        <div class="col-porter">
+                            <span class="badge-fuerza f3">Muchos sustitutos</span>
+                        </div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda">
+                            <span class="badge-foda amenaza">AMENAZA</span>
+                            <p>Clientes pueden resolver su necesidad de otra forma</p>
+                        </div>
+                    </div>
+
+                    <div class="conexion-row">
+                        <div class="col-porter">
+                            <span class="badge-fuerza f4">Proveedores con alto poder</span>
+                        </div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda">
+                            <span class="badge-foda debilidad">DEBILIDAD</span>
+                            <p>Dependencia de pocos proveedores críticos</p>
+                        </div>
+                    </div>
+
+                    <div class="conexion-row">
+                        <div class="col-porter">
+                            <span class="badge-fuerza f5">Clientes con bajo poder</span>
+                        </div>
+                        <div class="col-arrow">→</div>
+                        <div class="col-foda">
+                            <span class="badge-foda fortaleza">FORTALEZA</span>
+                            <p>Puedes mantener precios y condiciones</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CASO PRÁCTICO -->
+            <section class="caso-practico">
+                <h2>🔴 CASO PRÁCTICO COMPLETO: Startup de delivery de comida en Venado Tuerto</h2>
+                
+                <div class="contexto-box">
+                    <h3>CONTEXTO:</h3>
+                    <p>Querés lanzar una <strong>app de delivery de comida local</strong> en Venado Tuerto, compitiendo con PedidosYa, Rappi (si llega), y los deliveries propios de cada local.</p>
+                </div>
+
+                <!-- PASO 1: Porter -->
+                <div class="paso-caso">
+                    <h3>PASO 1: ANÁLISIS DE PORTER</h3>
+                    
+                    <div class="fuerza-analisis">
+                        <div class="fuerza-header fh1">
+                            <span class="fh-num">1</span>
+                            <strong>Rivalidad entre competidores</strong>
+                        </div>
+                        <div class="fuerza-body">
+                            <div class="nivel-badge media-alta">🟡 Media-Alta</div>
+                            <ul>
+                                <li>PedidosYa ya está establecido</li>
+                                <li>Varios negocios tienen delivery propio</li>
+                                <li>Los márgenes son ajustados</li>
+                            </ul>
+                            <div class="conclusion-fuerza">
+                                <strong>Conclusión:</strong> Tenés que diferenciarte (mejor servicio, comisiones más bajas a locales, tiempos de entrega)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fuerza-analisis">
+                        <div class="fuerza-header fh2">
+                            <span class="fh-num">2</span>
+                            <strong>Amenaza de nuevos competidores</strong>
+                        </div>
+                        <div class="fuerza-body">
+                            <div class="nivel-badge media">🟢 Media</div>
+                            <ul>
+                                <li>Técnicamente es fácil hacer una app</li>
+                                <li>Pero conseguir locales y repartidores es difícil</li>
+                                <li>La marca y confianza tardan en construirse</li>
+                            </ul>
+                            <div class="conclusion-fuerza">
+                                <strong>Conclusión:</strong> Ventana de oportunidad si te movés rápido
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fuerza-analisis">
+                        <div class="fuerza-header fh3">
+                            <span class="fh-num">3</span>
+                            <strong>Amenaza de sustitutos</strong>
+                        </div>
+                        <div class="fuerza-body">
+                            <div class="nivel-badge alta">🔴 Alta</div>
+                            <ul>
+                                <li>La gente puede cocinar en casa</li>
+                                <li>Puede ir a buscar la comida personalmente</li>
+                                <li>Puede llamar directo al local</li>
+                            </ul>
+                            <div class="conclusion-fuerza">
+                                <strong>Conclusión:</strong> Tu valor agregado debe ser claro (conveniencia, rapidez, variedad)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fuerza-analisis">
+                        <div class="fuerza-header fh4">
+                            <span class="fh-num">4</span>
+                            <strong>Poder de proveedores (locales de comida)</strong>
+                        </div>
+                        <div class="fuerza-body">
+                            <div class="nivel-badge media">🟡 Medio</div>
+                            <ul>
+                                <li>Necesitás a los locales populares</li>
+                                <li>Si no tenés las mejores opciones, los usuarios no usan la app</li>
+                                <li>Pero los locales también te necesitan para más ventas</li>
+                            </ul>
+                            <div class="conclusion-fuerza">
+                                <strong>Conclusión:</strong> Negociar comisiones justas, ofrecer herramientas de marketing
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fuerza-analisis">
+                        <div class="fuerza-header fh5">
+                            <span class="fh-num">5</span>
+                            <strong>Poder de clientes</strong>
+                        </div>
+                        <div class="fuerza-body">
+                            <div class="nivel-badge alta">🔴 Alto</div>
+                            <ul>
+                                <li>Cambiar de app es gratis y fácil</li>
+                                <li>Comparan precios y tiempos</li>
+                                <li>Son sensibles a promociones</li>
+                            </ul>
+                            <div class="conclusion-fuerza">
+                                <strong>Conclusión:</strong> Necesitás programa de fidelización, experiencia impecable
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASO 2: FODA -->
+                <div class="paso-caso">
+                    <h3>PASO 2: FODA (alimentado por Porter)</h3>
+                    
+                    <div class="foda-completo">
+                        <div class="foda-quadrant fortalezas-q">
+                            <h4>💪 FORTALEZAS</h4>
+                            <ul>
+                                <li>Conocimiento local profundo de Venado Tuerto</li>
+                                <li>Equipo tech capacitado</li>
+                                <li>Comisiones más bajas que competencia (15% menos)</li>
+                                <li>Servicio al cliente en español personalizado</li>
+                            </ul>
+                        </div>
+
+                        <div class="foda-quadrant oportunidades-q">
+                            <h4>🌟 OPORTUNIDADES</h4>
+                            <ul>
+                                <li>Mercado local todavía no saturado</li>
+                                <li>Locales descontentos con comisiones altas de PedidosYa</li>
+                                <li>Tendencia post-pandemia de pedir delivery</li>
+                                <li>Posibilidad de nicho premium (locales selectos)</li>
+                            </ul>
+                        </div>
+
+                        <div class="foda-quadrant debilidades-q">
+                            <h4>⚠️ DEBILIDADES</h4>
+                            <ul>
+                                <li>Marca desconocida (vs PedidosYa establecido)</li>
+                                <li>Presupuesto limitado para marketing</li>
+                                <li>Red de repartidores inicial pequeña</li>
+                                <li>Sin economías de escala todavía</li>
+                            </ul>
+                        </div>
+
+                        <div class="foda-quadrant amenazas-q">
+                            <h4>⚡ AMENAZAS</h4>
+                            <ul>
+                                <li>PedidosYa puede bajar precios para defenderse</li>
+                                <li>Rappi o Uber Eats pueden llegar a Venado Tuerto</li>
+                                <li>Locales pueden fortalecer sus deliveries propios</li>
+                                <li>Cambios en regulaciones de trabajo (repartidores)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PASO 3: ESTRATEGIA -->
+                <div class="paso-caso">
+                    <h3>PASO 3: ESTRATEGIA (basada en Porter + FODA)</h3>
+                    
+                    <div class="estrategia-elegida">
+                        <h4>Estrategia elegida: <strong>"Delivery local premium"</strong></h4>
+                        
+                        <div class="estrategia-section">
+                            <h5>🎯 Diferenciación:</h5>
+                            <ul>
+                                <li>Comisiones <strong>15% más bajas</strong> que PedidosYa para atraer locales</li>
+                                <li>Tiempos de entrega <strong>30% más rápidos</strong> (conocimiento local)</li>
+                                <li>Servicio al cliente en español, con atención personalizada</li>
+                            </ul>
+                        </div>
+
+                        <div class="estrategia-section">
+                            <h5>🔍 Enfoque:</h5>
+                            <ul>
+                                <li>Solo los <strong>mejores locales</strong> (curación de calidad)</li>
+                                <li>Modelo híbrido: delivery + retiro en local (para bajar costos)</li>
+                            </ul>
+                        </div>
+
+                        <div class="estrategia-section">
+                            <h5>🛡️ Defensa contra amenazas:</h5>
+                            <ul>
+                                <li>Contratos de <strong>exclusividad temporal</strong> con locales clave</li>
+                                <li>Programa de fidelización para usuarios (puntos, descuentos)</li>
+                                <li>Construir <strong>comunidad local</strong> (patrocinar eventos, clubes)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resumen -->
+            <section class="resumen-final">
+                <h2>🎯 Resumen: El Poder de Combinar Porter + FODA</h2>
+                <div class="resumen-content">
+                    <p><strong>Porter</strong> te ayuda a <strong>analizar el entorno competitivo</strong> de forma sistemática.</p>
+                    <p><strong>FODA</strong> te ayuda a <strong>organizar esa información</strong> para diseñar estrategias.</p>
+                    <p><strong>Juntos</strong> = Análisis estratégico <strong>profesional</strong> que usan empresas reales.</p>
+                    
+                    <div class="siguiente-paso">
+                        <p>💡 En el próximo bloque vamos a ver cómo las <strong>estructuras organizacionales</strong> (niveles jerárquicos) afectan la toma de decisiones estratégicas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Buttons -->
+            <div class="block-navigation">
+                <a href="bloque05.html" class="btn-nav btn-prev">
+                    <span>←</span> Anterior: Fuerzas 3, 4 y 5
+                </a>
+                <a href="bloque07.html" class="btn-nav btn-next">
+                    Siguiente: Niveles Jerárquicos <span>→</span>
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="unidad1-script.js"></script>
+    <script>
+        function markAsComplete() {
+            window.markBlockAsComplete(6);
+            alert('✅ ¡Bloque 6 completado! Ya sabés aplicar Porter y FODA juntos.');
+        }
+    </script>
+
+    <style>
+        .sabias-section {
+            margin: 3rem 0;
+        }
+
+        .sabias-box {
+            background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+            padding: 2.5rem;
+            border-radius: var(--radius-xl);
+            border: 3px solid var(--accent-purple);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .sabias-box h3 {
+            margin-top: 0;
+            color: var(--accent-purple);
+            font-size: 1.5rem;
+        }
+
+        .sabias-content p {
+            font-size: 1.125rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .fuerzas-whatsapp {
+            display: grid;
+            gap: 0.75rem;
+            margin: 2rem 0;
+        }
+
+        .fuerza-w {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .fw-num {
+            flex-shrink: 0;
+            width: 35px;
+            height: 35px;
+            background: var(--accent-purple);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .conclusion-whatsapp,
+        .resultado-whatsapp {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            border-left: 4px solid var(--accent-purple);
+        }
+
+        .conclusion-whatsapp strong,
+        .resultado-whatsapp strong {
+            display: block;
+            color: var(--accent-purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .antes-despues {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin: 2rem 0;
+        }
+
+        .antes-box,
+        .despues-box {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .antes-box {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.05) 0%, rgba(220, 38, 38, 0.05) 100%);
+            border: 2px solid var(--danger);
+        }
+
+        .despues-box {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, rgba(5, 150, 105, 0.05) 100%);
+            border: 2px solid var(--success);
+        }
+
+        .antes-box h4,
+        .despues-box h4 {
+            margin-top: 0;
+        }
+
+        .problema {
+            color: var(--danger);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .beneficio {
+            color: var(--success);
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .arrow-transform {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+
+        .tabla-conexion {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .conexion-row {
+            display: grid;
+            grid-template-columns: 2fr auto 3fr;
+            gap: 1.5rem;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .conexion-row.header {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+            border-radius: var(--radius-md);
+            border-bottom: none;
+        }
+
+        .conexion-row:last-child {
+            border-bottom: none;
+        }
+
+        .col-arrow {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            text-align: center;
+        }
+
+        .badge-fuerza,
+        .badge-foda {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+
+        .badge-fuerza {
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--primary-blue);
+        }
+
+        .badge-foda.amenaza {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--danger);
+        }
+
+        .badge-foda.debilidad {
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--warning);
+        }
+
+        .badge-foda.fortaleza {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+        }
+
+        .col-foda p {
+            margin: 0.5rem 0 0 0;
+            font-size: 0.95rem;
+        }
+
+        .caso-practico {
+            margin: 4rem 0;
+        }
+
+        .contexto-box {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(30, 64, 175, 0.1) 100%);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 2px solid var(--primary-blue);
+            margin-bottom: 3rem;
+        }
+
+        .contexto-box h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .paso-caso {
+            margin: 3rem 0;
+        }
+
+        .paso-caso h3 {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 2rem;
+        }
+
+        .fuerza-analisis {
+            background: white;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .fuerza-header {
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.125rem;
+        }
+
+        .fuerza-header.fh1 { background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1)); }
+        .fuerza-header.fh2 { background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(30, 64, 175, 0.1)); }
+        .fuerza-header.fh3 { background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(124, 58, 237, 0.1)); }
+        .fuerza-header.fh4 { background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(217, 119, 6, 0.1)); }
+        .fuerza-header.fh5 { background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1)); }
+
+        .fh-num {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .fuerza-body {
+            padding: 1.5rem;
+        }
+
+        .nivel-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-xl);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .nivel-badge.alta { background: rgba(239, 68, 68, 0.1); color: var(--danger); }
+        .nivel-badge.media-alta { background: rgba(245, 158, 11, 0.1); color: var(--warning); }
+        .nivel-badge.media { background: rgba(37, 99, 235, 0.1); color: var(--primary-blue); }
+
+        .fuerza-body ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .conclusion-fuerza {
+            background: rgba(37, 99, 235, 0.05);
+            padding: 1rem 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 1rem;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .foda-completo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .foda-quadrant {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .foda-quadrant h4 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 3px solid;
+        }
+
+        .fortalezas-q { background: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(5, 150, 105, 0.05)); }
+        .fortalezas-q h4 { color: var(--success); border-bottom-color: var(--success); }
+
+        .oportunidades-q { background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(30, 64, 175, 0.05)); }
+        .oportunidades-q h4 { color: var(--primary-blue); border-bottom-color: var(--primary-blue); }
+
+        .debilidades-q { background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05)); }
+        .debilidades-q h4 { color: var(--warning); border-bottom-color: var(--warning); }
+
+        .amenazas-q { background: linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(220, 38, 38, 0.05)); }
+        .amenazas-q h4 { color: var(--danger); border-bottom-color: var(--danger); }
+
+        .foda-quadrant ul {
+            margin: 1rem 0 0 0;
+            padding-left: 1.5rem;
+        }
+
+        .foda-quadrant li {
+            margin-bottom: 0.75rem;
+        }
+
+        .estrategia-elegida {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border: 3px solid var(--success);
+        }
+
+        .estrategia-elegida h4 {
+            margin-top: 0;
+            color: var(--success);
+            font-size: 1.5rem;
+        }
+
+        .estrategia-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 1.5rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .estrategia-section h5 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+
+        .resumen-final {
+            margin: 4rem 0;
+            padding: 3rem;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.05), rgba(139, 92, 246, 0.05));
+            border-radius: var(--radius-xl);
+        }
+
+        .resumen-content {
+            text-align: center;
+        }
+
+        .resumen-content p {
+            font-size: 1.25rem;
+            margin: 1rem 0;
+        }
+
+        .siguiente-paso {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 2rem;
+            border-left: 6px solid var(--primary-blue);
+        }
+
+        @media (max-width: 768px) {
+            .antes-despues {
+                grid-template-columns: 1fr;
+            }
+
+            .arrow-transform {
+                transform: rotate(90deg);
+            }
+
+            .conexion-row {
+                grid-template-columns: 1fr;
+            }
+
+            .col-arrow {
+                transform: rotate(90deg);
+            }
+
+            .foda-completo {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
