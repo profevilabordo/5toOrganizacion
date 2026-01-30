@@ -16,71 +16,75 @@
         <div class="nav-container">
             <a href="../index.html" class="nav-back">
                 <span class="back-arrow">←</span>
-                <span>Volver al inicio</span>
+                Volver al inicio
             </a>
+            
             <div class="nav-title">
                 <span class="nav-unit">Unidad 1</span>
-                <span class="nav-separator">|</span>
+                <span class="nav-separator">•</span>
                 <span class="nav-subject">Organización y Gestión</span>
             </div>
+
             <div class="nav-progress">
-                <span class="progress-label">Progreso</span>
+                <span class="progress-label">Progreso:</span>
                 <div class="mini-progress">
-                    <div class="mini-progress-fill" style="width: 35%"></div>
+                    <div class="mini-progress-fill" id="miniProgressFill"></div>
                 </div>
-                <span class="progress-percent">35%</span>
+                <span class="progress-percent" id="miniProgressPercent">0%</span>
             </div>
         </div>
     </nav>
 
-    <!-- Hero de la unidad -->
-    <div class="unit-hero">
+    <!-- Unit Hero -->
+    <section class="unit-hero">
         <div class="unit-hero-bg"></div>
         <div class="unit-hero-content">
-            <span class="unit-badge">Unidad 01</span>
-            <h1 class="unit-hero-title">Las Organizaciones</h1>
+            <div class="unit-badge">Unidad 1 - 5to A Informática</div>
+            <h1 class="unit-hero-title">🎯 Las Organizaciones</h1>
             <p class="unit-hero-description">
-                Comprendé cómo funcionan las empresas como sistemas sociales, aprendé a analizar 
-                su entorno competitivo y dominá las herramientas estratégicas fundamentales.
+                Análisis estratégico con el Modelo de Porter, FODA profundo, y estructuras 
+                jerárquicas. Aprende a pensar como un estratega tech y entiende cómo las 
+                empresas toman decisiones competitivas.
             </p>
             <div class="unit-meta">
                 <div class="meta-item">
                     <span class="meta-icon">📚</span>
-                    <span>10 bloques de contenido</span>
+                    <span>8 Bloques</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-icon">⏱️</span>
-                    <span>~4 semanas de estudio</span>
+                    <span>~6-8 horas</span>
                 </div>
                 <div class="meta-item">
                     <span class="meta-icon">🎯</span>
-                    <span>Evaluación final</span>
+                    <span>Nivel: Intermedio-Avanzado</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
+    <!-- Main Container -->
     <div class="container">
-        <!-- Roadmap de la unidad -->
+        <!-- Unit Roadmap -->
         <section class="unit-roadmap">
-            <h2 class="section-title">🗺️ Recorrido de Aprendizaje</h2>
+            <h2 class="section-title">🚀 Roadmap de la Unidad</h2>
             <p class="roadmap-intro">
-                Esta unidad se organiza en <strong>12 bloques</strong>: los primeros 10 contienen el contenido 
-                teórico y actividades prácticas, el bloque 11 es el diseño visual de la materia, y el 
-                bloque 12 tiene tu test de autoevaluación final.
+                <strong>Meta de esta unidad:</strong> Entender cómo las organizaciones (empresas tech, 
+                startups, estudios de desarrollo) analizan su entorno para tomar decisiones estratégicas 
+                que las mantienen competitivas.
             </p>
 
             <div class="blocks-container">
-                <!-- Bloque 1 -->
-                <div class="block-card completed" data-block="1">
+                <!-- BLOQUE 1: Introducción y Conexión -->
+                <div class="block-card" data-block="1">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">01</span>
-                            <span class="check">✓</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Presentación de la Unidad</h3>
-                            <p class="block-subtitle">Introducción y objetivos de aprendizaje</p>
+                            <h3 class="block-title">Introducción y Conexión</h3>
+                            <p class="block-subtitle">¿Por qué estudiar esto? Casos reales del mundo tech</p>
                         </div>
                     </div>
                     <div class="block-tags">
@@ -88,354 +92,254 @@
                         <span class="time-tag">⏱️ 15 min</span>
                     </div>
                     <a href="bloque01.html" class="block-button">
-                        <span>Revisar contenido</span>
+                        <span>Comenzar bloque</span>
                         <span>→</span>
                     </a>
                 </div>
 
-                <!-- Bloque 2 -->
-                <div class="block-card completed" data-block="2">
+                <!-- BLOQUE 2: Repaso Express -->
+                <div class="block-card" data-block="2">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">02</span>
-                            <span class="check">✓</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Preguntas / Conexión</h3>
-                            <p class="block-subtitle">Activación de conocimientos previos</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ 20 min</span>
-                    </div>
-                    <a href="bloque02.html" class="block-button">
-                        <span>Revisar contenido</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- Bloque 3 -->
-                <div class="block-card in-progress" data-block="3">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">03</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Concepto y Origen de Organización</h3>
-                            <p class="block-subtitle">Definición, surgimiento y evolución</p>
+                            <h3 class="block-title">Repaso Express</h3>
+                            <p class="block-subtitle">Lo que ya viste en 4to: Sistema social, fines, funciones, FODA básico</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 45 min</span>
+                        <span class="time-tag">⏱️ 30 min</span>
                     </div>
-                    <a href="bloque03.html" class="block-button">
-                        <span>Continuar estudiando</span>
+                    <a href="bloque02.html" class="block-button">
+                        <span>Ir al bloque</span>
                         <span>→</span>
                     </a>
                 </div>
 
-                <!-- Bloque 4 -->
-                <div class="block-card locked" data-block="4">
+                <!-- BLOQUE 3: Modelo de Porter - Introducción -->
+                <div class="block-card" data-block="3">
+                    <div class="block-header">
+                        <div class="block-number">
+                            <span class="number">03</span>
+                            <span class="check" style="display: none;">✓</span>
+                        </div>
+                        <div class="block-info">
+                            <h3 class="block-title">Modelo de Michael Porter</h3>
+                            <p class="block-subtitle">¿Quién es Porter? Las 5 Fuerzas de la competencia</p>
+                        </div>
+                    </div>
+                    <div class="block-tags">
+                        <span class="difficulty-tag red">🔴 Profundizar</span>
+                        <span class="time-tag">⏱️ 45 min</span>
+                    </div>
+                    <a href="bloque03.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
+                </div>
+
+                <!-- BLOQUE 4: Porter - Fuerzas 1 y 2 -->
+                <div class="block-card" data-block="4">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">04</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Elementos Básicos</h3>
-                            <p class="block-subtitle">Componentes fundamentales de las organizaciones</p>
+                            <h3 class="block-title">Porter: Rivalidad y Nuevos Competidores</h3>
+                            <p class="block-subtitle">Fuerza 1: Rivalidad • Fuerza 2: Amenaza de nuevos competidores</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag green">🟢 Imprescindible</span>
                         <span class="time-tag">⏱️ 40 min</span>
                     </div>
-                    <div class="block-button locked-button">
-                        <span>Completá el bloque anterior</span>
-                        <span>🔒</span>
-                    </div>
+                    <a href="bloque04.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
                 </div>
 
-                <!-- Bloque 5 -->
-                <div class="block-card locked" data-block="5">
+                <!-- BLOQUE 5: Porter - Fuerzas 3, 4, 5 -->
+                <div class="block-card" data-block="5">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">05</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Propósitos de las Organizaciones</h3>
-                            <p class="block-subtitle">Misión, visión y objetivos organizacionales</p>
+                            <h3 class="block-title">Porter: Sustitutos, Proveedores y Clientes</h3>
+                            <p class="block-subtitle">Fuerza 3: Sustitutos • Fuerza 4: Proveedores • Fuerza 5: Clientes</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 50 min</span>
+                        <span class="time-tag">⏱️ 40 min</span>
                     </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
+                    <a href="bloque05.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
                 </div>
 
-                <!-- Bloque 6 -->
-                <div class="block-card locked" data-block="6">
+                <!-- BLOQUE 6: Aplicando Porter + FODA -->
+                <div class="block-card" data-block="6">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">06</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Características de las Organizaciones</h3>
-                            <p class="block-subtitle">Rasgos distintivos y propiedades</p>
+                            <h3 class="block-title">Aplicando Porter + FODA</h3>
+                            <p class="block-subtitle">Caso práctico completo: Startup de delivery en Venado Tuerto</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ 45 min</span>
+                        <span class="time-tag">⏱️ 60 min</span>
                     </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
+                    <a href="bloque06.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
                 </div>
 
-                <!-- Bloque 7 -->
-                <div class="block-card locked" data-block="7">
+                <!-- BLOQUE 7: Niveles Jerárquicos -->
+                <div class="block-card" data-block="7">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">07</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">La Organización como Sistema</h3>
-                            <p class="block-subtitle">Enfoque sistémico y componentes</p>
+                            <h3 class="block-title">Niveles Jerárquicos</h3>
+                            <p class="block-subtitle">Estratégico, Táctico, Operativo • Estructuras planas vs. tradicionales</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 55 min</span>
+                        <span class="time-tag">⏱️ 35 min</span>
                     </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
+                    <a href="bloque07.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
                 </div>
 
-                <!-- Bloque 8 -->
-                <div class="block-card locked" data-block="8">
+                <!-- BLOQUE 8: Actividades y Evaluación -->
+                <div class="block-card special" data-block="8">
                     <div class="block-header">
                         <div class="block-number">
                             <span class="number">08</span>
+                            <span class="check" style="display: none;">✓</span>
                         </div>
                         <div class="block-info">
-                            <h3 class="block-title">Cultura Organizacional</h3>
-                            <p class="block-subtitle">Valores, normas y comportamiento interno</p>
+                            <h3 class="block-title">🎯 Actividades y Autoevaluación</h3>
+                            <p class="block-subtitle">Elegí tu actividad, checklist de conceptos, reflexión metacognitiva</p>
                         </div>
                     </div>
                     <div class="block-tags">
                         <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ 50 min</span>
+                        <span class="time-tag">⏱️ Flexible</span>
                     </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
-                </div>
-
-                <!-- Bloque 9 -->
-                <div class="block-card locked" data-block="9">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">09</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">La Empresa como Organización</h3>
-                            <p class="block-subtitle">Funciones, clasificación y estructura</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 60 min</span>
-                    </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
-                </div>
-
-                <!-- Bloque 10 -->
-                <div class="block-card locked" data-block="10">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">10</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Entorno y Fuerzas Organizacionales</h3>
-                            <p class="block-subtitle">Análisis FODA y Modelo de Porter</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 65 min</span>
-                    </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
-                </div>
-
-                <!-- Bloque 11 -->
-                <div class="block-card special locked" data-block="11">
-                    <div class="block-header">
-                        <div class="block-number special-number">
-                            <span class="number">11</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">🎨 Diseño Visual de la Asignatura</h3>
-                            <p class="block-subtitle">Recursos visuales y material complementario</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag red">🔴 Complementario</span>
-                        <span class="time-tag">⏱️ 30 min</span>
-                    </div>
-                    <div class="block-button locked-button">
-                        <span>Disponible pronto</span>
-                        <span>🔒</span>
-                    </div>
-                </div>
-
-                <!-- Bloque 12 -->
-                <div class="block-card special locked" data-block="12">
-                    <div class="block-header">
-                        <div class="block-number special-number">
-                            <span class="number">12</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">✅ Test de Autoevaluación</h3>
-                            <p class="block-subtitle">Evaluá tu comprensión de la unidad completa</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Evaluación</span>
-                        <span class="time-tag">⏱️ 45 min</span>
-                    </div>
-                    <div class="block-button locked-button">
-                        <span>Completá todos los bloques primero</span>
-                        <span>🔒</span>
-                    </div>
+                    <a href="bloque08.html" class="block-button">
+                        <span>Ir al bloque</span>
+                        <span>→</span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Objetivos de la unidad -->
+        <!-- Unit Objectives -->
         <section class="unit-objectives">
             <h2 class="section-title">🎯 Objetivos de Aprendizaje</h2>
             <div class="objectives-grid">
                 <div class="objective-card">
-                    <span class="objective-icon">🏢</span>
-                    <h4>Comprender las organizaciones</h4>
-                    <p>Identificar los elementos que conforman una organización y cómo interactúan entre sí</p>
-                </div>
-                <div class="objective-card">
                     <span class="objective-icon">🔍</span>
-                    <h4>Analizar el entorno</h4>
-                    <p>Aplicar herramientas de análisis estratégico como FODA y el Modelo de Porter</p>
+                    <h4>Analizar Competencia</h4>
+                    <p>Aplicar el Modelo de Porter para entender fuerzas competitivas en mercados tech</p>
                 </div>
                 <div class="objective-card">
                     <span class="objective-icon">📊</span>
-                    <h4>Entender la jerarquía</h4>
-                    <p>Reconocer los diferentes niveles jerárquicos y sus funciones en la organización</p>
+                    <h4>FODA Profesional</h4>
+                    <p>Realizar análisis FODA completo basado en datos y análisis estratégico</p>
+                </div>
+                <div class="objective-card">
+                    <span class="objective-icon">🏢</span>
+                    <h4>Entender Estructuras</h4>
+                    <p>Diferenciar niveles jerárquicos y estructuras organizacionales modernas</p>
                 </div>
                 <div class="objective-card">
                     <span class="objective-icon">💼</span>
-                    <h4>Aplicar conceptos</h4>
-                    <p>Transferir el conocimiento teórico a casos reales de empresas y organizaciones</p>
+                    <h4>Pensar Estratégicamente</h4>
+                    <p>Tomar decisiones empresariales fundamentadas en análisis riguroso</p>
                 </div>
             </div>
         </section>
 
-        <!-- Palabras clave -->
+        <!-- Key Concepts Checklist -->
         <section class="key-concepts">
-            <h2 class="section-title">📦 Conceptos Clave de esta Unidad</h2>
-            <p class="concepts-intro">Estos son los términos fundamentales que vas a dominar al completar la unidad:</p>
+            <h2 class="section-title">📦 Checklist de Conceptos Clave</h2>
+            <p class="concepts-intro">
+                Marca los conceptos que ya dominás. ¡Tu progreso se guarda automáticamente!
+            </p>
             <div class="concepts-checklist">
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Organización</span>
+                    <input type="checkbox" data-concept="sistema-social">
+                    <span class="concept-text">Organización como sistema social</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Sistema social</span>
+                    <input type="checkbox" data-concept="porter-5-fuerzas">
+                    <span class="concept-text">Las 5 Fuerzas de Porter</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Elementos básicos</span>
+                    <input type="checkbox" data-concept="rivalidad">
+                    <span class="concept-text">Rivalidad entre competidores</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Misión y visión</span>
+                    <input type="checkbox" data-concept="nuevos-competidores">
+                    <span class="concept-text">Amenaza de nuevos competidores</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Cultura organizacional</span>
+                    <input type="checkbox" data-concept="sustitutos">
+                    <span class="concept-text">Productos/servicios sustitutos</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Análisis FODA</span>
+                    <input type="checkbox" data-concept="poder-proveedores">
+                    <span class="concept-text">Poder de negociación de proveedores</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Modelo de Porter</span>
+                    <input type="checkbox" data-concept="poder-clientes">
+                    <span class="concept-text">Poder de negociación de clientes</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Fuerzas competitivas</span>
+                    <input type="checkbox" data-concept="foda">
+                    <span class="concept-text">Matriz FODA completa</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                    <span class="concept-text">Niveles jerárquicos</span>
+                    <input type="checkbox" data-concept="porter-foda-conexion">
+                    <span class="concept-text">Conexión Porter ↔ FODA</span>
                 </label>
                 <label class="concept-item">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
+                    <input type="checkbox" data-concept="niveles-jerarquicos">
+                    <span class="concept-text">Niveles jerárquicos (Estratégico, Táctico, Operativo)</span>
+                </label>
+                <label class="concept-item">
+                    <input type="checkbox" data-concept="estructuras">
+                    <span class="concept-text">Estructuras tradicionales vs. planas</span>
+                </label>
+                <label class="concept-item">
+                    <input type="checkbox" data-concept="planeamiento">
                     <span class="concept-text">Planeamiento estratégico</span>
                 </label>
             </div>
         </section>
     </div>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>EETP N°602</h4>
-                <p>Técnicos en Informática</p>
-                <p>Venado Tuerto, Santa Fe</p>
-            </div>
-            <div class="footer-section">
-                <h4>Unidad 1: Las Organizaciones</h4>
-                <p>5to Año - Ciclo Lectivo 2026</p>
-                <p>Prof. Verónica Vila Bordó</p>
-            </div>
-            <div class="footer-section">
-                <h4>Navegación</h4>
-                <p><a href="../index.html" style="color: rgba(255,255,255,0.8);">← Volver al inicio</a></p>
-                <p><a href="bloque03.html" style="color: rgba(255,255,255,0.8);">Siguiente bloque →</a></p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 EETP N°602 - Material educativo para uso exclusivo de estudiantes</p>
-        </div>
-    </footer>
-
+    <script src="../script.js"></script>
     <script src="unidad1-script.js"></script>
 </body>
 </html>
