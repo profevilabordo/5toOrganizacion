@@ -1,389 +1,214 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unidad 1: Las Organizaciones - Organización y Gestión</title>
     <link rel="stylesheet" href="../estilo.css">
-    <link rel="stylesheet" href="unidad1-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Barra de navegación -->
-    <nav class="top-nav">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-back">
-                <span class="back-arrow">←</span>
-                Volver al inicio
-            </a>
-            
-            <div class="nav-title">
-                <span class="nav-unit">Unidad 1</span>
-                <span class="nav-separator">•</span>
-                <span class="nav-subject">Organización y Gestión</span>
+    <div class="main-layout">
+        <!-- Sidebar Fijo Izquierdo -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">📚 Unidad 1</div>
+                <div class="sidebar-subtitle">Las Organizaciones</div>
             </div>
 
-            <div class="nav-progress">
-                <span class="progress-label">Progreso:</span>
-                <div class="mini-progress">
-                    <div class="mini-progress-fill" id="miniProgressFill"></div>
+```
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">📖 Bloques</div>
+                
+                <a href="#inicio" class="nav-item active">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Inicio Unidad</span>
+                </a>
+
+                <a href="bloque01.html" class="nav-item" data-block="1">
+                    <span class="nav-number">01</span>
+                    <span class="nav-text">Introducción</span>
+                </a>
+
+                <a href="bloque02.html" class="nav-item" data-block="2">
+                    <span class="nav-number">02</span>
+                    <span class="nav-text">Repaso Express</span>
+                </a>
+
+                <a href="bloque03.html" class="nav-item" data-block="3">
+                    <span class="nav-number">03</span>
+                    <span class="nav-text">Modelo de Porter</span>
+                </a>
+
+                <a href="bloque04.html" class="nav-item" data-block="4">
+                    <span class="nav-number">04</span>
+                    <span class="nav-text">Fuerzas 1 y 2</span>
+                </a>
+
+                <a href="bloque05.html" class="nav-item" data-block="5">
+                    <span class="nav-number">05</span>
+                    <span class="nav-text">Fuerzas 3, 4 y 5</span>
+                </a>
+
+                <a href="bloque06.html" class="nav-item" data-block="6">
+                    <span class="nav-number">06</span>
+                    <span class="nav-text">Porter + FODA</span>
+                </a>
+
+                <a href="bloque07.html" class="nav-item" data-block="7">
+                    <span class="nav-number">07</span>
+                    <span class="nav-text">Niveles Jerárquicos</span>
+                </a>
+
+                <a href="bloque08.html" class="nav-item" data-block="8">
+                    <span class="nav-number">08</span>
+                    <span class="nav-text">Actividades</span>
+                </a>
+
+                <a href="bloque09.html" class="nav-item" data-block="9">
+                    <span class="nav-number">09</span>
+                    <span class="nav-text">Diseño Visual</span>
+                </a>
+
+                <a href="testunidad1.html" class="nav-item" data-block="10">
+                    <span class="nav-number">10</span>
+                    <span class="nav-text">Test Online</span>
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">📌 Navegación</div>
+                <a href="../index.html" class="nav-item">
+                    <span class="nav-icon">←</span>
+                    <span class="nav-text">Volver al inicio</span>
+                </a>
+            </div>
+        </nav>
+
+        <div class="sidebar-progress">
+            <div class="progress-title">Progreso Unidad 1</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
+            </div>
+            <div class="progress-text" id="progressText">0 de 10 bloques</div>
+        </div>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="top-nav-content">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Inicio</a>
+                    <span class="breadcrumb-separator">›</span>
+                    <span>Unidad 1</span>
                 </div>
-                <span class="progress-percent" id="miniProgressPercent">0%</span>
+                <div class="top-nav-actions">
+                    <span style="color: var(--gray-600); font-size: 0.875rem;">
+                        5to A - Informática
+                    </span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Wrapper -->
+        <div class="content-wrapper">
+            <!-- Page Header -->
+            <header class="page-header" id="inicio">
+                <span class="badge badge-gold">Unidad 1</span>
+                <h1 class="page-title">🎯 Las Organizaciones</h1>
+                <p class="page-description">
+                    Análisis estratégico con el Modelo de Porter, FODA profundo, y estructuras 
+                    jerárquicas. Aprendé a pensar como un estratega tech y entendé cómo las 
+                    empresas toman decisiones competitivas.
+                </p>
+            </header>
+
+            <!-- Info General -->
+            <section class="content-card">
+                <h2>📘 Sobre esta unidad</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+                    <div style="text-align: center; padding: 1.5rem; background: var(--navy-pale); border-radius: 12px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--navy-dark); font-family: 'Outfit', sans-serif;">10</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Bloques</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: var(--gold-pale); border-radius: 12px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">⏱️</div>
+                        <div style="font-size: 2rem; font-weight: 800; color: var(--gold-dark); font-family: 'Outfit', sans-serif;">7-9h</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Tiempo estimado</div>
+                    </div>
+                    <div style="text-align: center; padding: 1.5rem; background: #d1fae5; border-radius: 12px;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎯</div>
+                        <div style="font-size: 1.25rem; font-weight: 800; color: var(--success); font-family: 'Outfit', sans-serif;">Intermedio</div>
+                        <div style="font-size: 0.875rem; color: var(--gray-600);">Nivel</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box info">
+                    <strong>🎯 Meta de esta unidad:</strong> Entender cómo las organizaciones (empresas tech, 
+                    startups, estudios de desarrollo) analizan su entorno para tomar decisiones estratégicas 
+                    que las mantienen competitivas.
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium)); border-radius: 12px; color: white; margin-top: 2rem;">
+                <h2 style="color: white; margin-bottom: 1rem;">¿Listo/a para empezar?</h2>
+                <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Comenzá por el Bloque 1 y seguí el roadmap paso a paso</p>
+                <a href="bloque01.html" class="btn-gold" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                    <span>🚀 Comenzar Bloque 1</span>
+                    <span>→</span>
+                </a>
             </div>
         </div>
-    </nav>
+    </main>
+</div>
 
-    <!-- Unit Hero -->
-    <section class="unit-hero">
-        <div class="unit-hero-bg"></div>
-        <div class="unit-hero-content">
-            <div class="unit-badge">Unidad 1 - 5to A Informática</div>
-            <h1 class="unit-hero-title">🎯 Las Organizaciones</h1>
-            <p class="unit-hero-description">
-                Análisis estratégico con el Modelo de Porter, FODA profundo, y estructuras 
-                jerárquicas. Aprende a pensar como un estratega tech y entiende cómo las 
-                empresas toman decisiones competitivas.
-            </p>
-            <div class="unit-meta">
-                <div class="meta-item">
-                    <span class="meta-icon">📚</span>
-                    <span>10 Bloques</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-icon">⏱️</span>
-                    <span>~7-9 horas</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-icon">🎯</span>
-                    <span>Nivel: Intermedio-Avanzado</span>
-                </div>
-            </div>
-        </div>
-    </section>
+<script>
+    // Cargar progreso desde localStorage
+    function loadProgress() {
+        const completed = JSON.parse(localStorage.getItem('unidad1-completed-blocks') || '[]');
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+        
+        const percentage = (completed.length / 10) * 100;
+        progressBar.style.width = percentage + '%';
+        progressText.textContent = `${completed.length} de 10 bloques`;
+        
+        // Marcar bloques completados en el menú
+        completed.forEach(blockNum => {
+            const navItem = document.querySelector(`.nav-item[data-block="${blockNum}"]`);
+            if (navItem) {
+                navItem.classList.add('completed');
+                if (!navItem.querySelector('.nav-check')) {
+                    const check = document.createElement('span');
+                    check.className = 'nav-check';
+                    check.textContent = '✓';
+                    navItem.appendChild(check);
+                }
+            }
+        });
+    }
 
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Unit Roadmap -->
-        <section class="unit-roadmap">
-            <h2 class="section-title">🚀 Roadmap de la Unidad</h2>
-            <p class="roadmap-intro">
-                <strong>Meta de esta unidad:</strong> Entender cómo las organizaciones (empresas tech, 
-                startups, estudios de desarrollo) analizan su entorno para tomar decisiones estratégicas 
-                que las mantienen competitivas.
-            </p>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
 
-            <div class="blocks-container">
-                <!-- BLOQUE 1: Introducción y Conexión -->
-                <div class="block-card" data-block="1">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">01</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Introducción y Conexión</h3>
-                            <p class="block-subtitle">¿Por qué estudiar esto? Casos reales del mundo tech</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 15 min</span>
-                    </div>
-                    <a href="bloque01.html" class="block-button">
-                        <span>Comenzar bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
+    loadProgress();
+</script>
+```
 
-                <!-- BLOQUE 2: Repaso Express -->
-                <div class="block-card" data-block="2">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">02</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Repaso Express</h3>
-                            <p class="block-subtitle">Lo que ya viste en 4to: Sistema social, fines, funciones, FODA básico</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 30 min</span>
-                    </div>
-                    <a href="bloque02.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 3: Modelo de Porter - Introducción -->
-                <div class="block-card" data-block="3">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">03</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Modelo de Michael Porter</h3>
-                            <p class="block-subtitle">¿Quién es Porter? Las 5 Fuerzas de la competencia</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag red">🔴 Profundizar</span>
-                        <span class="time-tag">⏱️ 45 min</span>
-                    </div>
-                    <a href="bloque03.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 4: Porter - Fuerzas 1 y 2 -->
-                <div class="block-card" data-block="4">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">04</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Porter: Rivalidad y Nuevos Competidores</h3>
-                            <p class="block-subtitle">Fuerza 1: Rivalidad • Fuerza 2: Amenaza de nuevos competidores</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 40 min</span>
-                    </div>
-                    <a href="bloque04.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 5: Porter - Fuerzas 3, 4, 5 -->
-                <div class="block-card" data-block="5">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">05</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Porter: Sustitutos, Proveedores y Clientes</h3>
-                            <p class="block-subtitle">Fuerza 3: Sustitutos • Fuerza 4: Proveedores • Fuerza 5: Clientes</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 40 min</span>
-                    </div>
-                    <a href="bloque05.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 6: Aplicando Porter + FODA -->
-                <div class="block-card" data-block="6">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">06</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Aplicando Porter + FODA</h3>
-                            <p class="block-subtitle">Caso práctico completo: Startup de delivery en Venado Tuerto</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ 60 min</span>
-                    </div>
-                    <a href="bloque06.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 7: Niveles Jerárquicos -->
-                <div class="block-card" data-block="7">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">07</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">Niveles Jerárquicos</h3>
-                            <p class="block-subtitle">Estratégico, Táctico, Operativo • Estructuras planas vs. tradicionales</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 35 min</span>
-                    </div>
-                    <a href="bloque07.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 8: Actividades y Evaluación -->
-                <div class="block-card" data-block="8">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">08</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">🎯 Actividades y Autoevaluación</h3>
-                            <p class="block-subtitle">Elegí tu actividad, checklist de conceptos, reflexión metacognitiva</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ Flexible</span>
-                    </div>
-                    <a href="bloque08.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 9: Diseño Visual de la Asignatura -->
-                <div class="block-card special" data-block="9">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">09</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">🎨 Diseño Visual de la Asignatura</h3>
-                            <p class="block-subtitle">Presentación interactiva y visual de la materia</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag yellow">🟡 Importante</span>
-                        <span class="time-tag">⏱️ 15 min</span>
-                    </div>
-                    <a href="bloque09.html" class="block-button">
-                        <span>Ir al bloque</span>
-                        <span>→</span>
-                    </a>
-                </div>
-
-                <!-- BLOQUE 10: Test de Autoevaluación Online -->
-                <div class="block-card special" data-block="10">
-                    <div class="block-header">
-                        <div class="block-number">
-                            <span class="number">10</span>
-                            <span class="check" style="display: none;">✓</span>
-                        </div>
-                        <div class="block-info">
-                            <h3 class="block-title">📝 Test de Autoevaluación Online</h3>
-                            <p class="block-subtitle">Test interactivo con resultados instantáneos</p>
-                        </div>
-                    </div>
-                    <div class="block-tags">
-                        <span class="difficulty-tag green">🟢 Imprescindible</span>
-                        <span class="time-tag">⏱️ 30 min</span>
-                    </div>
-                    <a href="testunidad1.html" class="block-button">
-                        <span>Ir al test</span>
-                        <span>→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Unit Objectives -->
-        <section class="unit-objectives">
-            <h2 class="section-title">🎯 Objetivos de Aprendizaje</h2>
-            <div class="objectives-grid">
-                <div class="objective-card">
-                    <span class="objective-icon">🔍</span>
-                    <h4>Analizar Competencia</h4>
-                    <p>Aplicar el Modelo de Porter para entender fuerzas competitivas en mercados tech</p>
-                </div>
-                <div class="objective-card">
-                    <span class="objective-icon">📊</span>
-                    <h4>FODA Profesional</h4>
-                    <p>Realizar análisis FODA completo basado en datos y análisis estratégico</p>
-                </div>
-                <div class="objective-card">
-                    <span class="objective-icon">🏢</span>
-                    <h4>Entender Estructuras</h4>
-                    <p>Diferenciar niveles jerárquicos y estructuras organizacionales modernas</p>
-                </div>
-                <div class="objective-card">
-                    <span class="objective-icon">💼</span>
-                    <h4>Pensar Estratégicamente</h4>
-                    <p>Tomar decisiones empresariales fundamentadas en análisis riguroso</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Key Concepts Checklist -->
-        <section class="key-concepts">
-            <h2 class="section-title">📦 Checklist de Conceptos Clave</h2>
-            <p class="concepts-intro">
-                Marca los conceptos que ya dominás. ¡Tu progreso se guarda automáticamente!
-            </p>
-            <div class="concepts-checklist">
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="sistema-social">
-                    <span class="concept-text">Organización como sistema social</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="porter-5-fuerzas">
-                    <span class="concept-text">Las 5 Fuerzas de Porter</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="rivalidad">
-                    <span class="concept-text">Rivalidad entre competidores</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="nuevos-competidores">
-                    <span class="concept-text">Amenaza de nuevos competidores</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="sustitutos">
-                    <span class="concept-text">Productos/servicios sustitutos</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="poder-proveedores">
-                    <span class="concept-text">Poder de negociación de proveedores</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="poder-clientes">
-                    <span class="concept-text">Poder de negociación de clientes</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="foda">
-                    <span class="concept-text">Matriz FODA completa</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="porter-foda-conexion">
-                    <span class="concept-text">Conexión Porter ↔ FODA</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="niveles-jerarquicos">
-                    <span class="concept-text">Niveles jerárquicos (Estratégico, Táctico, Operativo)</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="estructuras">
-                    <span class="concept-text">Estructuras tradicionales vs. planas</span>
-                </label>
-                <label class="concept-item">
-                    <input type="checkbox" data-concept="planeamiento">
-                    <span class="concept-text">Planeamiento estratégico</span>
-                </label>
-            </div>
-        </section>
-    </div>
-
-    <script src="../script.js"></script>
-    <script src="unidad1-script.js"></script>
 </body>
 </html>
