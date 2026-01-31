@@ -1,190 +1,182 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque 1: Introducción y Conexión - Unidad 1</title>
-    <link rel="stylesheet" href="../estilo.css">
-    <link rel="stylesheet" href="unidad1-style.css">
-    <link rel="stylesheet" href="bloque-style.css">
+    <title>Bloque 1: Introducción - Unidad 1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-dark: #0A1628;
+            --navy-main: #1e3a5f;
+            --navy-medium: #2c5282;
+            --navy-pale: #e8f0f7;
+            --gold-dark: #b8860b;
+            --gold-main: #d4a017;
+            --gold-light: #f4c430;
+            --gold-pale: #fff8dc;
+            --gray-50: #f9fafb;
+            --gray-200: #e5e7eb;
+            --gray-400: #9ca3af;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --success: #059669;
+            --sidebar-width: 280px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Nunito', sans-serif; font-size: 16px; line-height: 1.6; color: var(--gray-800); background: var(--gray-50); }
+        h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; font-weight: 700; color: var(--navy-dark); }
+        h1 { font-size: 2.5rem; } h2 { font-size: 2rem; }
+        .main-layout { display: flex; min-height: 100vh; }
+
+```
+    /* Sidebar */
+    .sidebar { width: var(--sidebar-width); background: var(--navy-dark); color: white; position: fixed; left: 0; top: 0; height: 100vh; overflow-y: auto; z-index: 1000; box-shadow: 4px 0 20px rgba(0,0,0,0.15); }
+    .sidebar-header { padding: 2rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); background: linear-gradient(135deg, var(--navy-dark), var(--navy-main)); }
+    .sidebar-logo { font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; color: var(--gold-light); margin-bottom: 0.5rem; }
+    .sidebar-subtitle { font-size: 0.875rem; color: rgba(255,255,255,0.7); }
+    .sidebar-nav { padding: 1.5rem 0; }
+    .nav-section { margin-bottom: 2rem; }
+    .nav-section-title { padding: 0.5rem 1.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--gold-light); margin-bottom: 0.5rem; }
+    .nav-item { display: flex; align-items: center; padding: 1rem 1.5rem; color: rgba(255,255,255,0.8); transition: all 0.2s; cursor: pointer; border-left: 3px solid transparent; text-decoration: none; }
+    .nav-item:hover { background: rgba(255,255,255,0.05); color: white; border-left-color: var(--gold-main); }
+    .nav-item.active { background: rgba(212,160,23,0.15); color: var(--gold-light); border-left-color: var(--gold-light); font-weight: 600; }
+    .nav-icon { margin-right: 1rem; font-size: 1.125rem; }
+    .nav-number { width: 28px; height: 28px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 700; margin-right: 1rem; flex-shrink: 0; }
+    .nav-item.active .nav-number { background: var(--gold-main); color: var(--navy-dark); }
+    .nav-text { flex: 1; font-size: 0.9375rem; }
+    .sidebar-progress { padding: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.2); }
+    .progress-title { font-size: 0.875rem; color: rgba(255,255,255,0.7); margin-bottom: 0.5rem; }
+    .progress-bar-container { background: rgba(255,255,255,0.1); height: 8px; border-radius: 10px; margin-bottom: 0.5rem; }
+    .progress-bar-fill { height: 100%; background: linear-gradient(90deg, var(--gold-main), var(--gold-light)); border-radius: 10px; transition: width 0.5s; }
+    .progress-text { font-size: 0.75rem; color: rgba(255,255,255,0.6); text-align: center; }
+    
+    /* Main Content */
+    .main-content { margin-left: var(--sidebar-width); flex: 1; }
+    .top-nav { background: white; border-bottom: 1px solid var(--gray-200); padding: 1.5rem 2rem; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .top-nav-content { display: flex; justify-content: space-between; align-items: center; }
+    .breadcrumb { font-size: 0.875rem; color: var(--gray-600); }
+    .breadcrumb-link { color: var(--navy-medium); font-weight: 600; text-decoration: none; }
+    .content-wrapper { padding: 3rem 2rem; max-width: 1000px; }
+    .page-header { margin-bottom: 3rem; }
+    .badge { display: inline-block; padding: 0.25rem 0.75rem; border-radius: 16px; font-size: 0.875rem; font-weight: 600; }
+    .badge-gold { background: var(--gold-pale); color: var(--gold-dark); }
+    .badge-success { background: #d1fae5; color: var(--success); }
+    .page-title { font-size: 2.5rem; margin: 1rem 0; }
+    .content-card { background: white; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 1px solid var(--gray-200); }
+    .content-card h2 { margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gold-light); }
+    .highlight-box { background: var(--navy-pale); border-left: 4px solid var(--navy-medium); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; }
+    
+    .btn-nav { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s; border: 2px solid; }
+    .btn-next { background: var(--navy-medium); color: white; border-color: var(--navy-medium); }
+    .btn-next:hover { background: var(--navy-dark); transform: translateX(5px); }
+    .block-nav-buttons { display: flex; gap: 1rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200); }
+    
+    .btn-complete { padding: 0.75rem 1.5rem; border: none; border-radius: 8px; background: linear-gradient(135deg, var(--gold-main), var(--gold-light)); color: var(--navy-dark); font-weight: 700; cursor: pointer; font-family: 'Nunito', sans-serif; }
+    
+    @media (max-width: 1024px) { .sidebar { transform: translateX(-100%); } .main-content { margin-left: 0; } }
+</style>
+```
+
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="block-nav">
-        <div class="nav-container">
-            <a href="index.html" class="nav-back">
-                <span class="back-arrow">←</span>
-                Volver a Unidad 1
-            </a>
-            <div class="block-nav-title">
-                <span class="block-num">Bloque 1</span>
-                <span class="separator">•</span>
-                <span class="block-name">Introducción y Conexión</span>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">📚 Unidad 1</div>
+                <div class="sidebar-subtitle">Las Organizaciones</div>
             </div>
-            <button class="btn-complete" onclick="markAsComplete()">
-                ✓ Marcar como completado
-            </button>
-        </div>
-    </nav>
-
-    <!-- Block Hero -->
-    <section class="block-hero">
-        <div class="block-hero-content">
-            <div class="block-badge">🟢 Imprescindible • ⏱️ 15 minutos</div>
-            <h1 class="block-hero-title">Introducción y Conexión</h1>
-            <p class="block-hero-subtitle">¿Por qué estudiar esto? Casos reales del mundo tech</p>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <div class="container">
-        <article class="block-content">
-            
-            <!-- Roadmap Visual -->
-            <section class="roadmap-visual">
-                <h2>🚀 ROADMAP DE LA UNIDAD</h2>
-                <div class="roadmap-boxes">
-                    <div class="roadmap-box active">
-                        <span class="roadmap-icon">📍</span>
-                        <strong>REVISIÓN</strong>
-                        <small>(ya lo viste)</small>
-                    </div>
-                    <span class="roadmap-arrow">→</span>
-                    <div class="roadmap-box">
-                        <span class="roadmap-icon">🎯</span>
-                        <strong>NUEVO CONTENIDO</strong>
-                        <small>(Porter + FODA profundo)</small>
-                    </div>
-                    <span class="roadmap-arrow">→</span>
-                    <div class="roadmap-box">
-                        <span class="roadmap-icon">💪</span>
-                        <strong>APLICACIÓN</strong>
-                        <small>(casos reales)</small>
-                    </div>
-                    <span class="roadmap-arrow">→</span>
-                    <div class="roadmap-box">
-                        <span class="roadmap-icon">🏆</span>
-                        <strong>DOMINIO</strong>
-                        <small>(¡Listo!)</small>
-                    </div>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">📖 Bloques</div>
+                    <a href="index.html" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-text">Inicio Unidad</span></a>
+                    <a href="bloque01.html" class="nav-item active" data-block="1"><span class="nav-number">01</span><span class="nav-text">Introducción</span></a>
+                    <a href="bloque02.html" class="nav-item" data-block="2"><span class="nav-number">02</span><span class="nav-text">Repaso Express</span></a>
+                    <a href="bloque03.html" class="nav-item" data-block="3"><span class="nav-number">03</span><span class="nav-text">Modelo de Porter</span></a>
+                    <a href="bloque04.html" class="nav-item" data-block="4"><span class="nav-number">04</span><span class="nav-text">Fuerzas 1 y 2</span></a>
+                    <a href="bloque05.html" class="nav-item" data-block="5"><span class="nav-number">05</span><span class="nav-text">Fuerzas 3, 4 y 5</span></a>
+                    <a href="bloque06.html" class="nav-item" data-block="6"><span class="nav-number">06</span><span class="nav-text">Porter + FODA</span></a>
+                    <a href="bloque07.html" class="nav-item" data-block="7"><span class="nav-number">07</span><span class="nav-text">Niveles Jerárquicos</span></a>
+                    <a href="bloque08.html" class="nav-item" data-block="8"><span class="nav-number">08</span><span class="nav-text">Actividades</span></a>
+                    <a href="bloque09.html" class="nav-item" data-block="9"><span class="nav-number">09</span><span class="nav-text">Diseño Visual</span></a>
+                    <a href="testunidad1.html" class="nav-item" data-block="10"><span class="nav-number">10</span><span class="nav-text">Test Online</span></a>
                 </div>
-                <div class="roadmap-goal">
-                    <strong>Meta de esta unidad:</strong> Entender cómo las organizaciones (empresas tech, startups, estudios de desarrollo) analizan su entorno para tomar decisiones estratégicas que las mantienen competitivas.
+                <div class="nav-section">
+                    <div class="nav-section-title">📌 Navegación</div>
+                    <a href="../index.html" class="nav-item"><span class="nav-icon">←</span><span class="nav-text">Volver al inicio</span></a>
                 </div>
-            </section>
+            </nav>
+            <div class="sidebar-progress">
+                <div class="progress-title">Progreso Unidad 1</div>
+                <div class="progress-bar-container"><div class="progress-bar-fill" id="progressBar" style="width: 0%"></div></div>
+                <div class="progress-text" id="progressText">0 de 10 bloques</div>
+            </div>
+        </aside>
 
-            <!-- Conexión con la Realidad -->
-            <section class="conexion-realidad">
-                <h2>👉 CONEXIÓN CON LA REALIDAD</h2>
+```
+    <main class="main-content">
+        <nav class="top-nav">
+            <div class="top-nav-content">
+                <div class="breadcrumb">
+                    <a href="../index.html" class="breadcrumb-link">Inicio</a> › 
+                    <a href="index.html" class="breadcrumb-link">Unidad 1</a> › 
+                    <span>Bloque 1</span>
+                </div>
+                <button class="btn-complete" onclick="markComplete()">✓ Completar</button>
+            </div>
+        </nav>
+
+        <div class="content-wrapper">
+            <header class="page-header">
+                <span class="badge badge-success">🟢 Imprescindible</span>
+                <span class="badge badge-gold">⏱️ 15 min</span>
+                <h1 class="page-title">Introducción y Conexión</h1>
+            </header>
+
+            <section class="content-card">
+                <h2>¿Por qué estudiar esto?</h2>
+                <p>Este bloque te conecta con casos reales del mundo tech para que entiendas por qué el análisis organizacional importa en tu futura carrera en IT.</p>
                 
-                <div class="realidad-card">
-                    <h3>¿Dónde aparece este tema en la vida cotidiana?</h3>
-                    
-                    <div class="ejemplo">
-                        <div class="ejemplo-icon">📺</div>
-                        <div class="ejemplo-content">
-                            <h4>¿Por qué Netflix invierte millones en series propias?</h4>
-                            <p>Porque analizó las <strong>"5 Fuerzas de Porter"</strong> y vio que depender solo de contenido ajeno era un riesgo.</p>
-                        </div>
-                    </div>
-
-                    <div class="ejemplo">
-                        <div class="ejemplo-icon">📦</div>
-                        <div class="ejemplo-content">
-                            <h4>¿Por qué MercadoLibre compró empresas de logística?</h4>
-                            <p>Estrategia para controlar toda la cadena y competir mejor.</p>
-                        </div>
-                    </div>
-
-                    <div class="ejemplo">
-                        <div class="ejemplo-icon">🚀</div>
-                        <div class="ejemplo-content">
-                            <h4>¿Por qué algunas startups quiebran y otras explotan?</h4>
-                            <p>Porque algunas hacen análisis FODA real y otras solo "prueban a ver qué pasa".</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="realidad-card">
-                    <h3>¿En qué trabajo usás esto?</h3>
-                    
-                    <div class="trabajo-grid">
-                        <div class="trabajo-item">
-                            <span class="trabajo-emoji">💼</span>
-                            <strong>Product Manager</strong>
-                            <p>Decide qué funcionalidades desarrollar según la competencia.</p>
-                        </div>
-                        <div class="trabajo-item">
-                            <span class="trabajo-emoji">👨‍💻</span>
-                            <strong>Tech Lead</strong>
-                            <p>Evalúa si conviene desarrollar in-house o contratar servicios.</p>
-                        </div>
-                        <div class="trabajo-item">
-                            <span class="trabajo-emoji">🚀</span>
-                            <strong>Emprendedor tech</strong>
-                            <p>Analiza el mercado antes de lanzar una app.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="realidad-card why-matters">
-                    <h3>¿Por qué te conviene entenderlo?</h3>
-                    <p>Porque cuando trabajes en una empresa de tecnología, vas a participar en reuniones donde se decide:</p>
-                    <ul class="decision-list">
-                        <li>¿Entramos a competir con este producto?</li>
-                        <li>¿Bajamos precios o mejoramos calidad?</li>
-                        <li>¿Nos asociamos o competimos?</li>
+                <div class="highlight-box">
+                    <strong>💡 ¿Para qué sirve en la vida real?</strong><br>
+                    Entender cómo funcionan las organizaciones te ayuda a:
+                    <ul style="margin-top: 1rem;">
+                        <li>Comprender por qué las empresas tech toman ciertas decisiones</li>
+                        <li>Identificar oportunidades de carrera y crecimiento profesional</li>
+                        <li>Desarrollar pensamiento estratégico esencial en roles de liderazgo</li>
                     </ul>
-                    <div class="highlight-box">
-                        <strong>💡 Si entendés Porter y FODA, no solo ejecutás código... ¡participás de las decisiones estratégicas! 💼</strong>
-                    </div>
                 </div>
             </section>
 
-            <!-- Preguntas Disparadoras -->
-            <section class="preguntas-section">
-                <h2>🤔 Preguntas para Pensar</h2>
-                <p class="intro-text">Antes de seguir, reflexioná sobre estas preguntas. No hay respuestas correctas o incorrectas, es para activar tu pensamiento:</p>
-                
-                <div class="pregunta-card">
-                    <span class="pregunta-num">1</span>
-                    <p>¿Qué empresas tech que conocés están compitiendo fuertemente ahora mismo? (Ej: Spotify vs YouTube Music, WhatsApp vs Telegram)</p>
-                </div>
-
-                <div class="pregunta-card">
-                    <span class="pregunta-num">2</span>
-                    <p>¿Por qué algunas apps son gratis y otras pagas? ¿Tiene que ver con su estrategia competitiva?</p>
-                </div>
-
-                <div class="pregunta-card">
-                    <span class="pregunta-num">3</span>
-                    <p>Si tuvieras que lanzar una startup tech mañana, ¿qué cosas analizarías antes de empezar?</p>
-                </div>
-            </section>
-
-            <!-- Navigation Buttons -->
-            <div class="block-navigation">
-                <a href="index.html" class="btn-nav btn-prev">
-                    <span>←</span> Volver al índice
-                </a>
-                <a href="bloque02.html" class="btn-nav btn-next">
-                    Siguiente: Repaso Express <span>→</span>
-                </a>
+            <div class="block-nav-buttons">
+                <a href="bloque02.html" class="btn-nav btn-next">Siguiente: Repaso Express <span>→</span></a>
             </div>
+        </div>
+    </main>
+</div>
 
-        </article>
-    </div>
-
-    <script src="../script.js"></script>
-    <script src="unidad1-script.js"></script>
-    <script>
-        function markAsComplete() {
-            window.markBlockAsComplete(1);
-            alert('✅ ¡Bloque 1 completado! Avanzá al siguiente.');
+<script>
+    function markComplete() {
+        let completed = JSON.parse(localStorage.getItem('unidad1-completed-blocks') || '[]');
+        if (!completed.includes(1)) {
+            completed.push(1);
+            localStorage.setItem('unidad1-completed-blocks', JSON.stringify(completed));
+            alert('✅ Bloque 1 completado');
+            location.reload();
         }
-    </script>
+    }
+    
+    function loadProgress() {
+        const completed = JSON.parse(localStorage.getItem('unidad1-completed-blocks') || '[]');
+        document.getElementById('progressBar').style.width = (completed.length / 10 * 100) + '%';
+        document.getElementById('progressText').textContent = completed.length + ' de 10 bloques';
+    }
+    loadProgress();
+</script>
+```
+
 </body>
 </html>
