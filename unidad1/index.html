@@ -4,16 +4,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidad 1: Las Organizaciones - Organización y Gestión</title>
-    <link rel="stylesheet" href="../estilo.css">
+    <title>Unidad 1: Las Organizaciones</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Variables */
+        :root {
+            --navy-dark: #0A1628;
+            --navy-main: #1e3a5f;
+            --navy-medium: #2c5282;
+            --navy-pale: #e8f0f7;
+            --gold-dark: #b8860b;
+            --gold-main: #d4a017;
+            --gold-light: #f4c430;
+            --gold-pale: #fff8dc;
+            --gray-50: #f9fafb;
+            --gray-200: #e5e7eb;
+            --gray-300: #d1d5db;
+            --gray-400: #9ca3af;
+            --gray-600: #4b5563;
+            --gray-800: #1f2937;
+            --success: #059669;
+            --sidebar-width: 280px;
+        }
+
+```
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--gray-800);
+        background: var(--gray-50);
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        color: var(--navy-dark);
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+
+    .main-layout { display: flex; min-height: 100vh; }
+
+    /* SIDEBAR */
+    .sidebar {
+        width: var(--sidebar-width);
+        background: var(--navy-dark);
+        color: white;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 1000;
+        box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+    }
+
+    .sidebar-header {
+        padding: 2rem 1.5rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        background: linear-gradient(135deg, var(--navy-dark), var(--navy-main));
+    }
+
+    .sidebar-logo {
+        font-family: 'Outfit', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 800;
+        color: var(--gold-light);
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar-subtitle {
+        font-size: 0.875rem;
+        color: rgba(255,255,255,0.7);
+    }
+
+    .sidebar-nav { padding: 1.5rem 0; }
+
+    .nav-section { margin-bottom: 2rem; }
+
+    .nav-section-title {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--gold-light);
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        color: rgba(255,255,255,0.8);
+        transition: all 0.2s;
+        cursor: pointer;
+        border-left: 3px solid transparent;
+        text-decoration: none;
+    }
+
+    .nav-item:hover {
+        background: rgba(255,255,255,0.05);
+        color: white;
+        border-left-color: var(--gold-main);
+    }
+
+    .nav-item.active {
+        background: rgba(212,160,23,0.15);
+        color: var(--gold-light);
+        border-left-color: var(--gold-light);
+        font-weight: 600;
+    }
+
+    .nav-item.completed {
+        color: rgba(255,255,255,0.6);
+    }
+
+    .nav-icon {
+        margin-right: 1rem;
+        font-size: 1.125rem;
+    }
+
+    .nav-number {
+        width: 28px;
+        height: 28px;
+        background: rgba(255,255,255,0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+        font-weight: 700;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+
+    .nav-item.active .nav-number {
+        background: var(--gold-main);
+        color: var(--navy-dark);
+    }
+
+    .nav-item.completed .nav-number {
+        background: var(--success);
+        color: white;
+    }
+
+    .nav-text { flex: 1; font-size: 0.9375rem; }
+
+    .nav-check {
+        margin-left: auto;
+        color: var(--success);
+    }
+
+    .sidebar-progress {
+        padding: 1.5rem;
+        border-top: 1px solid rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.2);
+    }
+
+    .progress-title {
+        font-size: 0.875rem;
+        color: rgba(255,255,255,0.7);
+        margin-bottom: 0.5rem;
+    }
+
+    .progress-bar-container {
+        background: rgba(255,255,255,0.1);
+        height: 8px;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .progress-bar-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--gold-main), var(--gold-light));
+        border-radius: 10px;
+        transition: width 0.5s;
+    }
+
+    .progress-text {
+        font-size: 0.75rem;
+        color: rgba(255,255,255,0.6);
+        text-align: center;
+    }
+
+    /* MAIN CONTENT */
+    .main-content {
+        margin-left: var(--sidebar-width);
+        flex: 1;
+    }
+
+    .top-nav {
+        background: white;
+        border-bottom: 1px solid var(--gray-200);
+        padding: 1.5rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+
+    .top-nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .breadcrumb {
+        font-size: 0.875rem;
+        color: var(--gray-600);
+    }
+
+    .breadcrumb-link {
+        color: var(--navy-medium);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .breadcrumb-separator { margin: 0 0.5rem; color: var(--gray-400); }
+
+    .content-wrapper {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+    }
+
+    .page-header { margin-bottom: 3rem; }
+
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 16px;
+        font-size: 0.875rem;
+        font-weight: 600;
+    }
+
+    .badge-gold {
+        background: var(--gold-pale);
+        color: var(--gold-dark);
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    .page-description {
+        font-size: 1.125rem;
+        color: var(--gray-600);
+    }
+
+    .content-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        border: 1px solid var(--gray-200);
+    }
+
+    .content-card h2 {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--gold-light);
+    }
+
+    .highlight-box {
+        background: var(--gold-pale);
+        border-left: 4px solid var(--gold-main);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 1.5rem 0;
+    }
+
+    .highlight-box.info {
+        background: var(--navy-pale);
+        border-left-color: var(--navy-medium);
+    }
+
+    .btn-gold {
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--gold-main), var(--gold-light));
+        color: var(--navy-dark);
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        font-family: 'Nunito', sans-serif;
+        font-size: 1rem;
+    }
+
+    .btn-gold:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1024px) {
+        .sidebar { transform: translateX(-100%); }
+        .main-content { margin-left: 0; }
+    }
+</style>
+```
+
 </head>
 <body>
     <div class="main-layout">
-        <!-- Sidebar Fijo Izquierdo -->
-        <aside class="sidebar" id="sidebar">
+        <!-- Sidebar -->
+        <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="sidebar-logo">📚 Unidad 1</div>
                 <div class="sidebar-subtitle">Las Organizaciones</div>
@@ -98,9 +402,8 @@
         </div>
     </aside>
 
-    <!-- Contenido Principal -->
+    <!-- Main Content -->
     <main class="main-content">
-        <!-- Top Navigation -->
         <nav class="top-nav">
             <div class="top-nav-content">
                 <div class="breadcrumb">
@@ -108,17 +411,13 @@
                     <span class="breadcrumb-separator">›</span>
                     <span>Unidad 1</span>
                 </div>
-                <div class="top-nav-actions">
-                    <span style="color: var(--gray-600); font-size: 0.875rem;">
-                        5to A - Informática
-                    </span>
+                <div>
+                    <span style="color: var(--gray-600); font-size: 0.875rem;">5to A - Informática</span>
                 </div>
             </div>
         </nav>
 
-        <!-- Content Wrapper -->
         <div class="content-wrapper">
-            <!-- Page Header -->
             <header class="page-header" id="inicio">
                 <span class="badge badge-gold">Unidad 1</span>
                 <h1 class="page-title">🎯 Las Organizaciones</h1>
@@ -129,7 +428,6 @@
                 </p>
             </header>
 
-            <!-- Info General -->
             <section class="content-card">
                 <h2>📘 Sobre esta unidad</h2>
                 
@@ -158,7 +456,6 @@
                 </div>
             </section>
 
-            <!-- CTA -->
             <div style="text-align: center; padding: 3rem; background: linear-gradient(135deg, var(--navy-dark), var(--navy-medium)); border-radius: 12px; color: white; margin-top: 2rem;">
                 <h2 style="color: white; margin-bottom: 1rem;">¿Listo/a para empezar?</h2>
                 <p style="margin-bottom: 2rem; color: rgba(255,255,255,0.9);">Comenzá por el Bloque 1 y seguí el roadmap paso a paso</p>
@@ -172,7 +469,6 @@
 </div>
 
 <script>
-    // Cargar progreso desde localStorage
     function loadProgress() {
         const completed = JSON.parse(localStorage.getItem('unidad1-completed-blocks') || '[]');
         const progressBar = document.getElementById('progressBar');
@@ -182,7 +478,6 @@
         progressBar.style.width = percentage + '%';
         progressText.textContent = `${completed.length} de 10 bloques`;
         
-        // Marcar bloques completados en el menú
         completed.forEach(blockNum => {
             const navItem = document.querySelector(`.nav-item[data-block="${blockNum}"]`);
             if (navItem) {
@@ -197,7 +492,6 @@
         });
     }
 
-    // Smooth scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
